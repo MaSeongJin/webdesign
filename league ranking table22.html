@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+	<meta charset="UTF-8">
+	<title>league ranking table</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+</head>
+	<style>
+		*{
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 0px;
+		}
+
+
+	  .ft p{
+  	  font-family: 'Poppins', sans-serif;
+  	  font-weight: 400;	
+	  }		
+
+	  .textbg h1{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 700;
+	  }
+	  .textbg p{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 100;
+	  }	 
+	  .teammenu p{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 300;
+	  }
+	  .inmenu p{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 300;
+	  }
+	  .tab p{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 300;	
+	  }
+	  .tab a{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 300;	
+	  }
+
+		/*---------------폰트-------------*/
+
+		.logobg{
+			width: 100%;
+			height: 110px;
+			background-color: white;
+			float: left;
+		}
+		.teamlogo{
+			width: 1344px;
+			height: 95px;
+			background-color: white;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			margin-bottom: 65px;
+		}
+		.tlimg{
+			height: 45px;
+			float: left;
+			margin-left: 10.8px;
+			margin-right: 10.8px;
+			margin-top: 25px;
+		}
+		.tlimg:hover{
+			height: 50px;
+			float: left;
+			margin-left: 10.8px;
+			margin-right: 10.8px;
+			margin-top: 25px;
+			border-bottom: 5px solid #F62A8D;
+		}
+		.mainbg{
+			width: 100%;
+			height: 635px;
+			background-image: url(https://i.postimg.cc/mgXNy3r0/MYH20200723015900038.jpg);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.prlogo{
+			float: left;
+			margin-top: 10px;
+			margin-left: 60px;
+		}
+		.prlogoimg{
+			height: 100px;
+			float: left;
+		}
+		.textbg{
+			width: 100%;
+			height: 200px;
+			background-color: rgba(0, 0, 0, 0.62);
+			float: left;
+			margin-top: 436px;
+		}
+		.textbg h1{
+			color: white;
+			font-size: 40px;
+			margin-left: 280px;
+			margin-top: 60px;
+		}
+		.textbg p{
+			color: white;
+			font-size: 20px;
+			margin-left: 280px;
+			margin-top: 10px;
+		}
+		.clearfix{
+			clear: both;
+		}
+		.menubar{
+			width: 1344px;
+			height: 60px;
+			background-color: #37003C;
+			margin: auto;
+			margin-top: 48px;
+			margin-bottom: 48px;
+		}
+		.menubar a:not(.m2){
+			text-decoration : none;
+			color: white;
+			font-size: 20px;
+			margin-left: 39px;
+			margin-right: 39px;
+			line-height: 60px;
+		}
+		.menubar a{
+			text-decoration : none;
+			font-size: 20px;
+			margin-left: 39px;
+			margin-right: 39px;
+			line-height: 60px;
+		}
+		.menubar a:hover{
+			color: #FF2882;
+		}
+		.m2{
+			color: #FF2882;
+		}
+		.menu{
+			width: 1344px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.teammenu{
+			width: 672px;
+			height: 104px;
+			margin-bottom: 24px;
+			float: left;
+			background-color: #37003C;
+		}
+		.teammenu p{
+			text-align: center;
+			line-height: 104px;
+			font-size: 23px;
+			color: white;
+		}
+		.inmenu{
+			width: 672px;
+			height: 104px;
+			margin-bottom: 24px;
+			float: left;
+			border: 1px solid gray;
+			border-bottom: 10px solid #37003C;
+		}
+		.inmenu p{
+			text-align: center;
+			line-height: 94px;
+			font-size: 23px;
+			color: #37003C;
+		}
+		.tab{
+			width: 1344px;
+			height: 52px;
+			margin-bottom: 24px;
+			background-color: #37003C;
+			margin-left: auto;
+			margin-right: auto;
+			color: white;
+		}
+		.tab p{
+			float: left;
+			margin-left: 56px;
+			margin-right: 56px;
+			line-height: 52px;
+		}
+		.tab a:not(.a3){
+			float: left;
+			text-decoration: none;
+			color: white;
+			margin-left: 56px;
+			margin-right: 56px;
+			line-height: 52px;
+		}
+		.tab a{
+			float: left;
+			text-decoration: none;
+			color: #FF2882;
+			margin-left: 56px;
+			margin-right: 56px;
+			line-height: 52px;
+		}
+		.tab a:hover{
+			color: #FF2882;
+		}
+		.table{
+			width: 1344px;
+			height: 950px;
+			margin: auto;
+			background-image: url(https://i.postimg.cc/KcwWxqyZ/6-100.jpg);
+			background-size: 1344px 950px;
+			background-position: center center;
+		}
+		.footer{
+			width: 100%;
+			height: 280px;
+			background-image: url(https://i.postimg.cc/rwt2Mmjz/FOOTER-1100-1.png);
+			background-size: cover;
+			background-position: center center;
+			margin-bottom: 0px;
+			margin-top: 112px;
+		}
+		.ftd{
+			width: 530px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 50px;
+		}
+		.fti{
+			display: inline-block;
+		}
+		.ft{
+			width: 220px;
+			float: right;
+		}
+		.ft p{
+			text-align: justify;
+			color: white;
+			font-size: 20px;
+		}
+		.under a:not(:last-child)::after{
+        	content: ' | '
+     	}
+		.under-a{
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			margin-top: 10px;
+		}
+		.under-a a{
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			font-size: 14px;
+		}
+		.under-p{
+			text-align: center;
+			color: gray;
+			font-size: 11px;
+		}
+	</style>
+<body>
+		<div class="logobg">
+			<div class="prlogo">
+			<a href="index.html">
+				<img class="prlogoimg" src="https://i.postimg.cc/CLHNNx4p/pngwing-com-2.png">
+			</a>
+			</div>
+			<div class="teamlogo">
+				<a href="http://www.tottenhamhotspur.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wBz6LFFk/pngegg-7.png">
+				</a>
+				<a href="http://www.leedsunited.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wTbH4g23/kisspng-leeds-united-f-c-derby-county-f-c-english-footba-5b120ac3acd1d9-6850100715279090597079.png">
+				</a>
+				<a href="https://www.wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/x1wQY5W2/kisspng-molineux-stadium-craven-cottage-wolverhampton-wand-ham-5abce6fddce637-8512825815223293419048.png">
+				</a>
+				<a href="https://www.sufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/XqYSxzyw/kisspng-sheffield-united-f-c-bramall-lane-english-footbal-5b0d77700120c4-1956221215276092000046.png">
+				</a>
+				<a href="https://www.southamptonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/28JRFTjZ/pngegg-1.png">
+				</a>
+				<a href="https://www.wba.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/YS657H66/pngegg-3.png">
+				</a>
+				<a href="http://www.whufc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/63zF7f1T/pngegg-4.png">
+				</a>
+				<a href="https://www.chelseafc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/T1wFn5Z0/pngegg-5.png">
+				</a>
+				<a href="https://www.evertonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/4ySMPNGg/pngegg-6.png">
+				</a>
+				<a href="http://www.burnleyfootballclub.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/4d3B0kBN/pngegg.png">
+				</a>
+				<a href="https://www.arsenal.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/kG6wnQ00/pngwing-com-4.png">
+				</a>
+				<a href="https://www.avfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/fRN4ryXz/pngwing-com-5.png">
+				</a>
+				<a href="https://www.brightonandhovealbion.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/63TFvvs0/pngwing-com-6.png">
+				</a>
+				<a href="http://www.cpfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/MT4Nbpq8/pngwing-com-8.png">
+				</a>
+				<a href="https://www.fulhamfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wxySxLQx/pngwing-com-9.png">
+				</a>
+				<a href="https://www.lcfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/mZvKPkmY/pngwing-com-10.png">
+				</a>
+				<a href="http://www.liverpoolfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/GmrNjNw9/pngwing-com-11.png">
+				</a>
+				<a href="https://www.mancity.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/k5gp0b5m/pngwing-com-12.png">
+				</a>
+				<a href="https://www.manutd.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/ydJrdC9p/pngwing-com-13.png">
+				</a>
+				<a href="https://www.nufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/zB92H2Fz/pngwing-com-14.png">
+				</a>
+			</div>
+		</div>
+			<div class="clearfix"></div>
+		<div class="mainbg">
+			<div class="textbg">
+				<h1>리그 순위표</h1>
+				<p>2020-2021 프리미어 리그 팀/개인 순위를 확인하세요.</p>
+			</div>
+		</div>
+			<div class="clearfix"></div>
+		<div class="menubar">
+			<a class="m1" href="index.html">HOME</a>
+			<a class="m2" href="league ranking table.html">LEAGUE RANKING TABLE</a>
+			<a class="m3" href="overseas article.html">OVERSEAS ARTICLE</a>
+			<a class="m4" href="highlight.html">HIGHLIGHT</a>
+			<a class="m5" href="matchday gallery.html">MATCHDAY GALLERY</a>
+			<a class="m6" href="official.html">OFFICIAL</a>
+		</div>
+		<div class="menu">
+			<a href="league ranking table.html">
+				<div class="teammenu">
+					<p>팀 순위</p>
+				</div>
+			</a>
+			<a href="league ranking table1.html">
+				<div class="inmenu">
+					<p>개인 순위</p>
+				</div>
+			</a>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tab">
+			<p>정렬기준</p>
+			<a class="a1" href="league ranking table.html">승점 ∧</a>
+			<a class="a2" href="league ranking table11.html">승리 ∧</a>
+			<a class="a3" href="league ranking table22.html">무승부 ∨</a>
+			<a class="a4" href="league ranking table33.html">패배 ∧</a>
+			<a class="a5" href="league ranking table44.html">득점 ∧</a>
+			<a class="a6" href="league ranking table55.html">실점 ∧</a>
+			<a class="a7" href="league ranking table66.html">득실차 ∧</a>
+		</div>
+		<div class="table"></div>
+	<div class="footer">
+		<div class="ftd">
+			<div class="fti">
+				<img src="https://i.postimg.cc/SKFFsh1d/FOOTER-1100-2.png" width="300px">
+			</div>
+			<div class="ft">
+				<p>DESIGNED BY. SYJ,MSJ COPYRIGHT - SYJ,MSJ DESIGN-PROGRAMING KOREAPOLYTECUNIVER</p>
+			</div>
+			<div class="under">
+    		<div class="under-a">
+	       		<a href="#">제휴제안</a>
+	        	<a href="#">기업윤리 상담센터</a>
+	        	<a href="#">개인정보 처리방침</a>
+	     	</div>
+	        <div class="under-p">
+       			<p>Copyright PREMIERE LEAGUE Crop. All Rights Reserved.</p>
+       		</div>
+   		</div>
+		</div>
+		
+	</div>
+</body>
+</html>

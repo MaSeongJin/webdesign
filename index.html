@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+	<meta charset="UTF-8">
+	<title>Premier League</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+	<style>
+		*{
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 0px;
+		}
+		/*----------------폰트설정-----------------*/
+
+      .official p{
+      font-family: 'Noto Sans KR', sans-serif;
+      }
+      .at p{
+      font-family: 'Noto Sans KR', sans-serif;
+      }
+      .matchgy p{
+      font-family: 'Noto Sans KR', sans-serif;
+      }
+      .playhl p{
+      font-family: 'Noto Sans KR', sans-serif;
+      }
+      .menubar a{
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 400;
+      } 
+      
+      .more p{
+      font-family: 'Noto Sans KR', sans-serif;
+	  text-align: center;
+      color: #37003c;
+      line-height: 50px;
+      font-weight: 700;
+	  }
+	  .more p:hover{
+	  text-align: center;
+	  color: #37003c;
+	  line-height: 40px;
+      }
+      .at.official.matchgy.playhl a{
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 100;
+      }
+      .leaguetb th{
+	  font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 400;	
+		}
+	  .ft p{
+  	  font-family: 'Poppins', sans-serif;
+  	  font-weight: 400;	
+	  }
+      /*-------------------------------------------------*/
+		.logobg{
+			width: 100%;
+			height: 110px;
+			background-color: white;
+			float: left;
+		}
+		.teamlogo{
+			width: 1344px;
+			height: 95px;
+			background-color: white;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			margin-bottom: 65px;
+		}
+		.tlimg{
+			height: 45px;
+			float: left;
+			margin-left: 10.8px;
+			margin-right: 10.8px;
+			margin-top: 25px;
+		}
+		@media (max-width: 992px) {
+			.tlimg{
+				height: 30px;
+			}
+		}
+		@media (max-width: 1752px) {
+			.tlimg{
+				height: 0px;
+			}
+		}		
+		.tlimg:hover{
+			height: 50px;
+			float: left;
+			margin-left: 10.8px;
+			margin-right: 10.8px;
+			margin-top: 25px;
+			border-bottom: 5px solid #F62A8D;
+		}
+		.mainbg{
+			width: 100%;
+			height: 635px;
+			background-image: url(https://i.postimg.cc/QdCLZY6L/image.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.prlogo{
+			float: left;
+			margin-top: 10px;
+			margin-left: 60px;
+		}
+		.prlogoimg{
+			height: 100px;
+			float: left;
+		}
+
+/*----------------------------------------------------------------------------*/
+		.match{
+			width: 1344px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.match1{
+			width: 432px;
+			height: 480px;
+			float: left;
+			background-image: url(https://i.postimg.cc/nV5YZwHr/1.png);
+			background-size: 100% 100%;
+			background-position: center center;
+			margin-top: 38px;
+			transition: all 0.5s ease-in-out;
+		}
+		.match1:hover{
+			width: 432px;
+			height: 480px;
+			float: left;
+			background-image: url(https://i.postimg.cc/nV5YZwHr/1.png);
+			background-size: 110% 110%;
+			background-position: center center;
+			margin-top: 38px;
+		}
+		.match2{
+			width: 432px;
+			height: 480px;
+			float: left;
+			background-image: url(https://i.postimg.cc/hjQ879sc/2.png);
+			background-size: 100% 100%;
+			background-position: center center;
+			margin-left: 24px;
+			margin-right: 24px;
+			margin-top: 38px;
+			transition: all 0.5s ease-in-out;
+		}
+		.match2:hover{
+			width: 432px;
+			height: 480px;
+			float: left;
+			background-image: url(https://i.postimg.cc/hjQ879sc/2.png);
+			background-size: 110% 110%;
+			background-position: center center;
+			margin-top: 38px;
+		}
+		.match3{
+			width: 432px;
+			height: 480px;
+			float: left;
+			background-image: url(https://i.postimg.cc/02V6PzGf/3.png);
+			background-size: 100% 100%;
+			background-position: center center;
+			margin-top: 38px;
+			transition: all 0.5s ease-in-out;
+		}
+		.match3:hover{
+			width: 432px;
+			height: 480px;
+			float: left;
+			background-image: url(https://i.postimg.cc/02V6PzGf/3.png);
+			background-size: 110% 110%;
+			background-position: center center;
+			margin-top: 38px;
+		}
+		.clearfix{
+			clear: both;
+		}
+		.more{
+			width: 184px;
+			height: 50px;
+			background-color: #FF2882;
+			position: relative;
+			top: -125px;
+			margin-left: auto;
+			margin-right: auto;
+			text-decoration: none;
+		}
+		.more:hover{
+			width: 164px;
+			height: 40px;
+			background-color: #FF2882;
+			position: relative;
+			top: -120px;
+			margin-bottom: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			text-decoration: none;
+		}
+		.morea{
+			text-decoration: none;
+		}
+/*----------------------------------------------------------------------------*/
+		.menubar{
+			width: 1344px;
+			height: 60px;
+			background-color: #37003C;
+			margin: auto;
+			margin-top: -12px;
+			margin-bottom: 48px;
+		}
+		.menubar a:not(.m1){
+			text-decoration : none;
+			color: white;
+			font-size: 18px;
+			margin-left: 45.5px;
+			margin-right: 45.5px;
+			line-height: 60px;
+		}
+		.menubar a{
+			text-decoration : none;
+			font-size: 18px;
+			margin-left: 45.5px;
+			margin-right: 45.5px;
+			line-height: 60px;
+		}
+		.menubar a:hover{
+			color: #FF2882;
+		}
+		.m1{
+			color: #FF2882;
+		}
+/*----------------------------------------------------------------------------*/
+		.menu{
+			width: 1344px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+/*----------------------------------------------------------------------------*/
+		.leaguetb{
+			width: 318px;
+			height: 960px;
+			float: left;
+		}
+		table{
+			width: 318px;
+			height: 960px;
+			font-size: 13px;
+		}
+		.t1{
+			height: 25px
+		}
+		th{
+			border-top: 1px solid #D8D8D8;
+		 	border-left: 1px solid #F2F4F2;
+		}
+		.topc {
+		background-color: #F62A8D;			
+		}
+		.pts{
+		 	border-right: 1px solid #F2F4F2;
+		}
+
+		.shep {
+			border-bottom: 1px solid #D8D8D8;	
+		}
+		tr:hover:not(.topc) {background-color: #f5f5f5;}
+/*----------------------------------------------------------------------------*/
+		.playhl{
+			width: 1002px;
+			height: 104px;
+			float: left;
+			margin-left: 24px;	
+			border-top : 1px solid gray;
+		}
+		.playhl p{
+			font-size: 28px;
+			color: #37003C;
+			line-height: 190px;
+			display: inline-block;
+			margin-right: 705px;
+			margin-left: 10px;
+			font-weight: bold;
+		}
+		.playhl a{
+			font-size: 15px;
+			color: #37003C;
+			line-height: 104px;
+			text-decoration: none;
+			display: inline-block;
+		}
+		.playhl img{
+			height: 10px;
+		}
+		.playhl a:hover{
+			color: #FF2882;
+		}
+		.mainhl{
+			width: 1002px;
+			height: 482px;
+			background-image: url(https://i.postimg.cc/JhLcBygk/image.jpg);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.mainhl img{
+			width: 140px;
+			height: 130px;
+			margin-left: 429px;
+			margin-top: 176px;
+		}
+		.mainhl:hover {
+			width: 1002px;
+			height: 482px;
+			background-image: url(https://i.postimg.cc/y88RDqvK/1-100.jpg);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.subhl1{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/3xJtxfyv/1.png);
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.subhl1:hover {
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/zDtCrGJN/1.png);
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.subhl1 img{
+			width: 70px;
+			height: 65px;
+			margin-left: 124px;
+			margin-top: 87.5px;
+		}
+		.subhl2{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/FKYGjfVF/2.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.subhl2:hover {
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/brBkH36r/2.png);
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.subhl2 img{
+			width: 70px;
+			height: 65px;
+			margin-left: 124px;
+			margin-top: 87.5px;
+		}
+		.subhl3{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/cJPhTsFR/3.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.subhl3:hover {
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/bNZQNfJt/3.png);
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.subhl3 img{
+			width: 70px;
+			height: 65px;
+			margin-left: 124px;
+			margin-top: 87.5px;
+		}
+/*----------------------------------------------------------------------------*/
+		.matchgy{
+			width: 1002px;
+			height: 104px;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+			border-top : 1px solid gray;
+		}
+		.matchgy p{
+			font-size: 28px;
+			color: #37003C;
+			line-height: 190px;
+			display: inline-block;
+			margin-right: 700px;
+			margin-left: 10px;
+			font-weight: bold;
+		}
+		.matchgy a{
+			font-size: 15px;
+			color: #37003C;
+			line-height: 104px;
+			text-decoration: none;
+			display: inline-block;
+		}
+		.matchgy img{
+			height: 10px;
+		}
+		.matchgy a:hover{
+			color: #FF2882;
+		}
+/*----------------------------------------------------------------------------*/
+		.leftimg1{
+			width: 318px;
+			height: 450px;
+			background-color: #A5A7D5;
+			float: left;
+			margin-top: -16px;
+		}
+		.l1{
+			width: 318px;
+			height: 180px;
+			background-image: url(https://i.postimg.cc/7YbGVjW9/KOTM-1.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.limg1{
+			width: 159px;
+			height: 135px;
+			background-image: url(https://i.postimg.cc/pLk1bt1n/533333-1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.limg2{
+			width: 159px;
+			height: 135px;
+			background-image: url(https://i.postimg.cc/4xXFS3wg/5333-1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.limg3{
+			width: 159px;
+			height: 135px;
+			background-image: url(https://i.postimg.cc/X7fzL5fL/53333333-1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.limg4{
+			width: 159px;
+			height: 135px;
+			background-image: url(https://i.postimg.cc/15hdDBq4/5333333-1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+/*----------------------------------------------------------------------------*/
+		.mgimg{
+			width: 546px;
+			height: 738px;
+			background-image: url(https://i.postimg.cc/26zgWsxF/12345233-1.png);
+			background-size: 100% 100%;
+			background-position: center center;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+			transition: all 0.3s ease-in-out;
+		}
+		.mgimg:hover{
+			width: 546px;
+			height: 738px;
+			background-image: url(https://i.postimg.cc/26zgWsxF/12345233-1.png);
+			background-size: 110% 110%;
+			background-position: center center;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.mgdiv1{
+			width: 432px;
+			height: 230px;
+			background-image: url(https://i.postimg.cc/d0RzLsGV/223-1.png);
+			background-size: 100% 100%;
+			background-position: center center;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+			transition: all 0.3s ease-in-out;
+		}
+		.mgdiv1:hover{
+			width: 432px;
+			height: 230px;
+			background-image: url(https://i.postimg.cc/d0RzLsGV/223-1.png);
+			background-size: 110% 110%;
+			background-position: center center;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.mgdiv2{
+			width: 432px;
+			height: 230px;
+			background-image: url(https://i.postimg.cc/0N1TkMM4/22-1.png);
+			background-size: 100% 100%;
+			background-position: center center;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+			transition: all 0.3s ease-in-out;
+		}
+		.mgdiv2:hover{
+			width: 432px;
+			height: 230px;
+			background-image: url(https://i.postimg.cc/0N1TkMM4/22-1.png);
+			background-size: 110% 110%;
+			background-position: center center;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.mgdiv3{
+			width: 432px;
+			height: 230px;
+			background-image: url(https://i.postimg.cc/SN30Ptyk/2-1.png);
+			background-size: 100% 100%;
+			background-position: center center;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+			transition: all 0.3s ease-in-out;
+		}
+		.mgdiv3:hover{
+			width: 432px;
+			height: 230px;
+			background-image: url(https://i.postimg.cc/SN30Ptyk/2-1.png);
+			background-size: 110% 110%;
+			background-position: center center;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+/*----------------------------------------------------------------------------*/
+		.leftimg2{
+			width: 318px;
+			height: 450px;
+			background-color: #A5A7D5;
+			float: left;
+			margin-top: -301px;
+		}
+		.l2{
+			width: 318px;
+			height: 180px;
+			background-image: url(https://i.postimg.cc/tgdYJbsq/1.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.l2img1{
+			width: 159px;
+			height: 135px;
+			background-image: url(https://i.postimg.cc/6p9tftv7/223-1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.l2img2{
+			width: 159px;
+			height: 135px;
+			background-image: url(https://i.postimg.cc/GhPbDHHw/223333-1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.l2img3{
+			width: 159px;
+			height: 135px;
+			background-image: url(https://i.postimg.cc/PfwXt6Hq/2233-1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.l2img4{
+			width: 159px;
+			height: 135px;
+			background-image: url(https://i.postimg.cc/m2WbhQZy/22333-1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+/*----------------------------------------------------------------------------*/
+		.at{
+			width: 1002px;
+			height: 104px;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+			border-top : 1px solid gray;
+		}
+		.at p{
+			font-size: 28px;
+			color: #37003C;
+			line-height: 190px;
+			display: inline-block;
+			margin-right: 725px;
+			margin-left: 10px;
+			font-weight: bold;
+		}
+		.at a{
+			font-size: 15px;
+			color: #37003C;
+			line-height: 104px;
+			text-decoration: none;
+			display: inline-block;
+		}
+		.at img{
+			height: 10px;
+		}
+		.at a:hover{
+			color: #FF2882;
+		}
+		.atdiv1{
+			width: 489px;
+			height: 430px;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.atdiv1 a{
+			text-decoration: none;
+			color: #1E1E1E;
+		}
+		.atdiv1 a:hover{
+			text-decoration: underline 1px #1E1E1E;
+		}
+		.atdiv2 a:hover{
+			text-decoration: underline 1px #1E1E1E;
+		}
+		.atdiv3 a:hover{
+			text-decoration: underline 1px #1E1E1E;
+		}
+		.atdiv4 a:hover{
+			text-decoration: underline 1px #1E1E1E;
+		}
+		.atdiv5 a:hover{
+			text-decoration: underline 1px #1E1E1E;
+		}
+		.atdiv2 a{
+			text-decoration: none;
+			color: #1E1E1E;
+		}
+		.atdiv3 a{
+			text-decoration: none;
+			color: #1E1E1E;
+		}
+		.atdiv4 a{
+			text-decoration: none;
+			color: #1E1E1E;
+		}
+		.atdiv5 a{
+			text-decoration: none;
+			color: #1E1E1E;
+		}
+		.atdiv1 h1{
+			padding:5px;
+			font-size: 20px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 700px;
+		}
+		.atdiv2 h1{
+			padding:5px;
+			font-size: 20px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 700px;
+		}
+		.atdiv3 h1{
+			padding:5px;
+			font-size: 20px;
+			text-align: justify;
+			padding: 8px 15px 0px 15px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 700px;
+		}
+		.atdiv4 h1{
+			padding:5px;
+			font-size: 20px;
+			text-align: justify;
+			padding: 8px 15px 0px 15px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 700px;
+		}
+		.atdiv5 h1{
+			padding:5px;
+			font-size: 20px;
+			text-align: justify;
+			padding: 8px 15px 0px 15px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 700px;
+		}
+		.atdiv1 p{
+			font-size: 14px;
+			text-align: justify;
+			line-height: 20px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 200px;
+		}
+		.atdiv2 p{
+			font-size: 14px;
+			text-align: justify;
+			line-height: 20px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 200px;
+		}
+		.a1{
+			width: 489px;
+			height: 290px;
+			background-image: url(https://i.postimg.cc/xdw9yzM9/1.jpg);
+			background-size: cover;
+			background-position: top center;
+		}
+		.atdiv2{
+			width: 489px;
+			height: 430px;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.a2{
+			width: 489px;
+			height: 290px;
+			background-image: url(https://i.postimg.cc/WbNTnjFq/2.jpg);
+			background-size: cover;
+			background-position: center center;
+		}
+/*----------------------------------------------------------------------------*/
+		.leftimg3{
+			width: 318px;
+			height: 450px;
+			background-color: #A5A7D5;
+			float: left;
+			margin-top: -406px;
+		}
+		.l3{
+			width: 318px;
+			height: 180px;
+			background-image: url(https://i.postimg.cc/tgGs9JCv/1.png);
+			background-size: cover;
+			background-position: center center;
+		}
+		.l3img1{
+			width: 159px;
+			height: 135px;
+			background-image: url(https://i.postimg.cc/T1RCH7qc/2233334-1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.l3img2{
+			width: 159px;
+			height: 135px;
+			background-image: url(https://i.postimg.cc/C1Cc7TD1/5-1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.l3img3{
+			width: 159px;
+			height: 135px;
+			background-image: url(https://i.postimg.cc/KjJJXP0h/53-1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.l3img4{
+			width: 159px;
+			height: 135px;
+			background-image: url(https://i.postimg.cc/jj7gWJSy/533-1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+/*----------------------------------------------------------------------------*/
+		.atdiv3{
+			width: 318px;
+			height: 280px;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.a3{
+			width: 318px;
+			height: 190px;
+			background-image: url(https://i.postimg.cc/c1Mdw6HN/1.jpg);
+			background-size: cover;
+			background-position: top center;
+		}
+		.atdiv4{
+			width: 318px;
+			height: 280px;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.a4{
+			width: 318px;
+			height: 190px;
+			background-image: url(https://i.postimg.cc/7Zb4FVNx/2.jpg);
+			background-size: cover;
+			background-position: top center;
+		}
+		.atdiv5{
+			width: 318px;
+			height: 280px;
+			float: left;
+			margin-left: 24px;
+			margin-top: 24px;
+		}
+		.a5{
+			width: 318px;
+			height: 190px;
+			background-image: url(https://i.postimg.cc/FsvFf3Vv/314134134134134.jpg);
+			background-size: cover;
+			background-position: top center;
+		}
+/*----------------------------------------------------------------------------*/
+		.official{
+			width: 1002px;
+			height: 104px;
+			float: left;
+			margin-left: 342px;
+			margin-top: 24px;
+			border-top : 1px solid gray;
+		}
+		.official p{
+			font-size: 28px;
+			color: #37003C;
+			line-height: 190px;
+			display: inline-block;
+			margin-right: 705px;
+			margin-left: 10px;
+			font-weight: bold;
+		}
+		.official a{
+			font-size: 15px;
+			color: #37003C;
+			line-height: 104px;
+			text-decoration: none;
+			display: inline-block;
+		}
+		.official img{
+			height: 10px;
+		}
+		.official a:hover{
+			color: #FF2882;
+		}
+		.of{
+			width: 1002px;
+			height: 672px;
+			float: left;
+			margin-left: 342px;
+			margin-top: 24px;
+		}
+		.ofdiv{
+			width: 1002px;
+			height: 512px;
+			background-image: url(https://i.postimg.cc/nhHWgYq3/image.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+			margin-top: 0px;
+		}
+
+		.of a{
+			text-decoration: none;
+			color: #1E1E1E;
+		}
+		.of h1{
+			padding:5px;
+			font-size: 34px;
+			text-align: justify;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 700;
+			padding-top: 520px;
+			color: #1E1E1E;
+		}
+		.of a:hover{
+			text-decoration: underline 1px #1E1E1E;
+		}
+
+		.of p{
+			font-size: 18px;
+			text-align: justify;
+			line-height: 25px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 300;
+			padding-top: 5px;
+		}
+
+/*----------------------------------------------------------------------------*/
+		.clearfix{
+			clear: both;
+		}
+		.footer{
+			width: 100%;
+			height: 280px;
+			background-image: url(https://i.postimg.cc/rwt2Mmjz/FOOTER-1100-1.png);
+			background-size: cover;
+			background-position: center center;
+			margin-bottom: 0px;
+			margin-top: 112px;
+		}
+		.ftd{
+			width: 530px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 50px;
+		}
+		.fti{
+			display: inline-block;
+		}
+		.ft{
+			width: 220px;
+			float: right;
+		}
+		.ft p{
+			text-align: justify;
+			color: white;
+			font-size: 20px;
+		}
+		.under a:not(:last-child)::after{
+        	content: ' | '
+     	}
+		.under-a{
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			margin-top: 10px;
+		}
+		.under-a a{
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			font-size: 14px;
+		}
+		.under-p{
+			text-align: center;
+			color: gray;
+			font-size: 11px;
+		}
+	</style>
+<body>
+		<div class="logobg">
+			<div class="prlogo">
+			<a href="index.html">
+				<img class="prlogoimg" src="https://i.postimg.cc/CLHNNx4p/pngwing-com-2.png">
+			</a>
+			</div>
+			<div class="teamlogo">
+				<a href="http://www.tottenhamhotspur.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wBz6LFFk/pngegg-7.png">
+				</a>
+				<a href="http://www.leedsunited.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wTbH4g23/kisspng-leeds-united-f-c-derby-county-f-c-english-footba-5b120ac3acd1d9-6850100715279090597079.png">
+				</a>
+				<a href="https://www.wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/x1wQY5W2/kisspng-molineux-stadium-craven-cottage-wolverhampton-wand-ham-5abce6fddce637-8512825815223293419048.png">
+				</a>
+				<a href="https://www.sufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/XqYSxzyw/kisspng-sheffield-united-f-c-bramall-lane-english-footbal-5b0d77700120c4-1956221215276092000046.png">
+				</a>
+				<a href="https://www.southamptonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/28JRFTjZ/pngegg-1.png">
+				</a>
+				<a href="https://www.wba.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/YS657H66/pngegg-3.png">
+				</a>
+				<a href="http://www.whufc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/63zF7f1T/pngegg-4.png">
+				</a>
+				<a href="https://www.chelseafc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/T1wFn5Z0/pngegg-5.png">
+				</a>
+				<a href="https://www.evertonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/4ySMPNGg/pngegg-6.png">
+				</a>
+				<a href="http://www.burnleyfootballclub.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/4d3B0kBN/pngegg.png">
+				</a>
+				<a href="https://www.arsenal.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/kG6wnQ00/pngwing-com-4.png">
+				</a>
+				<a href="https://www.avfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/fRN4ryXz/pngwing-com-5.png">
+				</a>
+				<a href="https://www.brightonandhovealbion.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/63TFvvs0/pngwing-com-6.png">
+				</a>
+				<a href="http://www.cpfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/MT4Nbpq8/pngwing-com-8.png">
+				</a>
+				<a href="https://www.fulhamfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wxySxLQx/pngwing-com-9.png">
+				</a>
+				<a href="https://www.lcfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/mZvKPkmY/pngwing-com-10.png">
+				</a>
+				<a href="http://www.liverpoolfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/GmrNjNw9/pngwing-com-11.png">
+				</a>
+				<a href="https://www.mancity.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/k5gp0b5m/pngwing-com-12.png">
+				</a>
+				<a href="https://www.manutd.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/ydJrdC9p/pngwing-com-13.png">
+				</a>
+				<a href="https://www.nufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/zB92H2Fz/pngwing-com-14.png">
+				</a>
+			</div>
+		</div>
+		<div class="mainbg">
+			<div class="match">
+			<div class="match1"></div>
+			<div class="match2"></div>
+			<div class="match3"></div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<a class="morea" href="">
+			<div class="more">
+				<p>경기 일정 더 보기</p>
+			</div>
+		</a>
+		<div class="menubar">
+			<a class="m1" href="index.html">HOME</a>
+			<a class="m2" href="league ranking table.html">LEAGUE RANKING TABLE</a>
+			<a class="m3" href="overseas article.html">OVERSEAS ARTICLE</a>
+			<a class="m4" href="highlight.html">HIGHLIGHT</a>
+			<a class="m5" href="matchday gallery.html">MATCHDAY GALLERY</a>
+			<a class="m6" href="official.html">OFFICIAL</a>
+		</div>
+	<div class="menu">
+		<div class="leaguetb">
+			<table>
+				<tr class="topc"><th colspan="2">pos</th><th>club</th><th>Pl</th><th>GD</th><th class="pts">Pts</th></tr>
+				<tr><th>1</th><th><img class="t1" src="https://i.postimg.cc/wBz6LFFk/pngegg-7.png"></th><th>토트넘</th><th>11</th><th>+14</th><th class="pts">24</th></tr>
+				<tr><th>2</th><th><img class="t1" src="https://i.postimg.cc/GmrNjNw9/pngwing-com-11.png"></th><th>리버풀</th><th>11</th><th>+9</th><th class="pts">24</th></tr>
+				<tr><th>3</th><th><img class="t1" src="https://i.postimg.cc/T1wFn5Z0/pngegg-5.png"></th><th>첼시</th><th>11</th><th>+14</th><th class="pts">22</th></tr>
+				<tr><th>4</th><th><img class="t1" src="https://i.postimg.cc/mZvKPkmY/pngwing-com-10.png"></th><th>레스터 시티</th><th>11</th><th>+6</th><th class="pts">21</th></tr>
+				<tr><th>5</th><th><img class="t1" src="https://i.postimg.cc/63zF7f1T/pngegg-4.png"></th><th>웨스트 햄</th><th>12</th><th>+5</th><th class="pts">20</th></tr>
+				<tr><th>6</th><th><img class="t1" src="https://i.postimg.cc/28JRFTjZ/pngegg-1.png"></th><th>사우스햄튼</th><th>11</th><th>+4</th><th class="pts">20</th></tr>
+				<tr><th>7</th><th><img class="t1" src="https://i.postimg.cc/ydJrdC9p/pngwing-com-13.png"></th><th>맨유</th><th>10</th><th>+2</th><th class="pts">19</th></tr>
+				<tr><th>8</th><th><img class="t1" src="https://i.postimg.cc/fRN4ryXz/pngwing-com-5.png"></th><th>아스톤 빌라</th><th>10</th><th>+8</th><th class="pts">18</th></tr>
+				<tr><th>9</th><th><img class="t1" src="https://i.postimg.cc/k5gp0b5m/pngwing-com-12.png"></th><th>맨시티</th><th>10</th><th>+6</th><th class="pts">18</th></tr>
+				<tr><th>10</th><th><img class="t1" src="https://i.postimg.cc/4ySMPNGg/pngegg-6.png"></th><th>에버튼</th><th>11</th><th>+2</th><th class="pts">17</th></tr>
+				<tr><th>11</th><th><img class="t1" src="https://i.postimg.cc/MT4Nbpq8/pngwing-com-8.png"></th><th>뉴캐슬</th><th>11</th><th>-2</th><th class="pts">17</th></tr>
+				<tr><th>12</th><th><img class="t1" src="https://i.postimg.cc/x1wQY5W2/kisspng-molineux-stadium-craven-cottage-wolverhampton-wand-ham-5abce6fddce637-8512825815223293419048.png"></th><th>울버햄튼</th><th>12</th><th>-5</th><th class="pts">17</th></tr>
+				<tr><th>13</th><th><img class="t1" src="https://i.postimg.cc/MT4Nbpq8/pngwing-com-8.png"></th><th>팰리스</th><th>11</th><th>+1</th><th class="pts">15</th></tr>
+				<tr><th>14</th><th><img class="t1" src="https://i.postimg.cc/wTbH4g23/kisspng-leeds-united-f-c-derby-county-f-c-english-footba-5b120ac3acd1d9-6850100715279090597079.png"></th><th>리즈</th><th>12</th><th>-5</th><th class="pts">14</th></tr>
+				<tr><th>15</th><th><img class="t1" src="https://i.postimg.cc/kG6wnQ00/pngwing-com-4.png"></th><th>아스날</th><th>11</th><th>-4</th><th class="pts">13</th></tr>
+				<tr><th>16</th><th><img class="t1" src="https://i.postimg.cc/63TFvvs0/pngwing-com-6.png"></th><th>브라이튼</th><th>11</th><th>-3</th><th class="pts">10</th></tr>				
+				<tr><th>17</th><th><img class="t1" src="https://i.postimg.cc/wxySxLQx/pngwing-com-9.png"></th><th>풀햄</th><th>11</th><th>-10</th><th class="pts">7</th></tr>
+				<tr><th>18</th><th><img class="t1" src="https://i.postimg.cc/4d3B0kBN/pngegg.png"></th><th>번리</th><th>10</th><th>-13</th><th class="pts">6</th></tr>
+				<tr><th>19</th><th><img class="t1" src="https://i.postimg.cc/YS657H66/pngegg-3.png"></th><th>웨스트 브롬</th><th>12</th><th>-16</th><th class="pts">6</th></tr>
+				<tr><th class="shep">20</th><th class="shep"><img class="t1" src="https://i.postimg.cc/XqYSxzyw/kisspng-sheffield-united-f-c-bramall-lane-english-footbal-5b0d77700120c4-1956221215276092000046.png"></th><th class="shep">셰필드</th><th class="shep">11</th><th class="shep">-13</th><th class="pts shep">1</th></tr>
+			</table>
+		</div>
+		<div class="playhl">
+			<p>경기 하이라이트</p>
+			<a href="">View more
+			<img src="https://i.postimg.cc/hPh1TRGK/2-1.png">
+			</a>
+		</div>
+		<a href="#">
+			<div class="mainhl">
+				<img src="https://i.postimg.cc/6qfjzskc/pngwing-com-1-1.png">
+			</div>
+		</a>
+		<div class="subhl1">
+			<img src="https://i.postimg.cc/6qfjzskc/pngwing-com-1-1.png">
+		</div>
+		<div class="subhl2">
+			<img src="https://i.postimg.cc/6qfjzskc/pngwing-com-1-1.png">
+		</div>
+		<div class="subhl3">
+			<img src="https://i.postimg.cc/6qfjzskc/pngwing-com-1-1.png">
+		</div>
+		<div class="matchgy">
+			<p>매치데이 갤러리</p>
+			<a href="">View more
+			<img src="https://i.postimg.cc/hPh1TRGK/2-1.png">
+			</a>
+		</div>
+		<div class="leftimg1">
+			<div class="l1"></div>
+			<div class="limg1"></div>
+			<div class="limg2"></div>
+			<div class="limg3"></div>
+			<div class="limg4"></div>
+		</div>
+		<div class="mgimg"></div>
+		<div class="mgdiv1"></div>
+		<div class="mgdiv2"></div>
+		<div class="mgdiv3"></div>
+		<div class="leftimg2">
+			<div class="l2"></div>
+			<div class="l2img1"></div>
+			<div class="l2img2"></div>
+			<div class="l2img3"></div>
+			<div class="l2img4"></div>
+		</div>
+		<div class="at">
+			<p>해외기사 번역</p>
+			<a href="">View more
+			<img src="https://i.postimg.cc/hPh1TRGK/2-1.png">
+			</a>
+		</div>
+		<div class="atdiv1">
+			<div class="a1"></div>
+			<a href="#"><h1> 조세 무리뉴 감독, 13년 만에 EPL 이달의 감독 수상 </h1></a>
+			<p> 잉글랜드 프로축구 토트넘의 조세 무리뉴 감독이 13년만에 프리미어리그(EPL) 이달의 감독상을 수상했다. EPL 사무국은 무리뉴 감독이 11월 이달의 감독에 선정됐다고 발표했다. 토트넘은 11월 네 경기에서 3승 1무로 무패를 달리며 선두로 올라섰다. 특히 중요했던 맨체스터 시티 전에서는 2-0 완승을 거두는 등 세 차례 무실점 경기를 펼쳤다. </p>
+		</div>
+		<div class="atdiv2">
+			<div class="a2"></div>
+			<a href="#"><h1> 에딘손 카바니, 박싱데이 와중 인종차별 논란.. 징계는? </h1></a>
+			<p> 맨체스터 유나이티드의 공격수 에딘손 카바니는 지난 13일 인스타그램에 올린 스토리에 적혀있는 멘트가 인종차별 논란에 휩싸이면서 징계를 받을 위험에 처했다. 맨체스터 유나이티드 구단 측과 카바니 개인 에이전트 측은 인종차별의 의도가 없었다며 해명을 해 놓은 상태이지만, FIFA측이 카바니에게 부여할 징계의 수위가 도마위에 올랐다. </p>
+		</div>
+		<div class="leftimg3">
+			<div class="l3"></div>
+			<div class="l3img1"></div>
+			<div class="l3img2"></div>
+			<div class="l3img3"></div>
+			<div class="l3img4"></div>
+		</div>
+		<div class="atdiv3">
+			<div class="a3"></div>
+			<a href="#"><h1> 리버풀 티아고, 올해 못 볼듯... 부상 회복 더뎌 </h1></a>
+		</div>
+		<div class="atdiv4">
+			<div class="a4"></div>
+			<a href="#"><h1> 첼시 팀닥터 에바, 갈등 이후  2년만에 팀에 돌아오다 </h1></a>
+		</div>
+		<div class="atdiv5">
+			<div class="a5"></div>
+			<a href="#"><h1>"VAR이 룰을 몰랐다!"...'픽포드 노파울' 심판 사면초가</h1></a>
+		</div>
+		<div class="official">
+			<p>오피셜 이적정보</p>
+			<a href="">View more
+			<img src="https://i.postimg.cc/hPh1TRGK/2-1.png">
+			</a>
+		</div>
+		<div class="of">
+			<div class="ofdiv"></div>
+			<a href="#"><h1>토트넘, 사우샘프턴 호이비에르 영입...계약 기간 5년</h1></a>
+			<p> 토트넘이 피에르-에밀 호이비에르(25)를 영입하며 중원 강화에 성공했다.토트넘은 12일(한국시간) “사우샘프턴에서 뛰던 덴마크 국가대표 미드필더 호이비에르와 계약했다”고 밝혔다. 영국 스카이스포츠는 2025년까지 계약을 맺은 그의 이적료가 1500만 파운드(약 232억원)가량이며 계약 조건엔 보너스가 추가됐다고 보도했다.2019~2020시즌을 마친 토트넘이 2020~2021시즌을 준비하며 발표한 첫 선수 영입이다. 호이비에르는 독일 바이에른 뮌헨에서 2013년 프로로 데뷔, 2015∼2016년에는 아우크스부르크와 샬케에서 임대 생활을 했다. </p>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="footer">
+		<div class="ftd">
+			<div class="fti">
+				<img src="https://i.postimg.cc/SKFFsh1d/FOOTER-1100-2.png" width="300px">
+			</div>
+			<div class="ft">
+				<p>DESIGNED BY. SYJ,MSJ COPYRIGHT - SYJ,MSJ DESIGN-PROGRAMING KOREAPOLYTECUNIVER</p>
+			</div>
+			<div class="under">
+    		<div class="under-a">
+	       		<a href="#">제휴제안</a>
+	        	<a href="#">기업윤리 상담센터</a>
+	        	<a href="#">개인정보 처리방침</a>
+	     	</div>
+	        <div class="under-p">
+       			<p>Copyright PREMIERE LEAGUE Crop. All Rights Reserved.</p>
+       		</div>
+   		</div>
+		</div>
+		
+	</div>
+</body>
+</html>

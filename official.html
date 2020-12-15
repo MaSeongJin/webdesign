@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+	<meta charset="UTF-8">
+	<title>official</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+	<style>
+		*{
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 0px;
+		}
+		.ft p{
+  	  font-family: 'Poppins', sans-serif;
+  	  font-weight: 400;	
+	  }		
+
+	  .textbg h1{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 700;
+	  }
+	  .textbg p{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 100;
+	  }	
+	  .div1 a{
+	  text-decoration: none;
+	  text-align: center; 
+	  }
+	  .div1 h1{
+	  font-size: 34px;
+	  color: black;
+	  color: #1E1E1E;
+	  margin-top: 15px;
+	  }
+	  .div1 p{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 400;
+	  text-align: center;
+	  text-align: justify;
+	  font-size: 19px;
+	  margin-top: 15px;
+	  color: #1E1E1E;
+	  }
+	  .div2 h1{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 700;	
+	  }
+	  .div3 h1{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 700;
+	  color: #1E1E1E;
+	  font-size: 19px;
+	  margin-top: 5px;
+	  }
+	  .div3 p{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 400;
+	  color: #1E1E1E;
+	  font-size: 14px;
+	  text-align: justify;
+	  margin-top: 5px;
+	  }
+	  .div4 h1{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 700;
+	  color: #1E1E1E;
+	  font-size: 19px;
+	  margin-top: 5px;
+	  }
+	  .div4 p{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 400;
+	  color: #1E1E1E;
+	  font-size: 14px;
+	  text-align: justify;
+	  margin-top: 5px;
+	  }
+		}
+		.logobg{
+			width: 100%;
+			height: 110px;
+			background-color: white;
+			float: left;
+		}
+		.teamlogo{
+			width: 1344px;
+			height: 95px;
+			background-color: white;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+		}		
+		.tlimg{
+			height: 45px;
+			float: left;
+			margin-left: 10.8px;
+			margin-right: 10.8px;
+			margin-top: 25px;
+		}
+		.tlimg:hover{
+			height: 50px;
+			float: left;
+			margin-left: 10.8px;
+			margin-right: 10.8px;
+			margin-top: 25px;
+			border-bottom: 5px solid #F62A8D;
+		}
+		.prlogo{
+			float: left;
+			margin-top: 0px;
+			margin-left: 60px;
+		}
+		.prlogoimg{
+			height: 100px;
+			float: left;
+		}
+		.mainbg{
+			width: 100%;
+			height: 635px;
+			background-image: url(https://i.postimg.cc/WtcPh8SB/3.png);
+			background-size: cover;
+			background-position: top center;
+			float: left;
+		}
+		.textbg{
+			width: 100%;
+			height: 200px;
+			background-color: rgba(0, 0, 0, 0.62);
+			float: left;
+			margin-top: 436px;
+		}
+		.textbg h1{
+			color: white;
+			font-size: 40px;
+			margin-left: 280px;
+			margin-top: 60px;
+		}
+		.textbg p{
+			color: white;
+			font-size: 20px;
+			margin-left: 280px;
+			margin-top: 10px;
+		}
+		.clearfix{
+			clear: both;
+		}
+		.menubar{
+			width: 1344px;
+			height: 60px;
+			background-color: #37003C;
+			margin: auto;
+			margin-top: 48px;
+			margin-bottom: 48px;
+		}
+		.menubar a:not(.m6){
+			text-decoration : none;
+			color: white;
+			font-size: 20px;
+			margin-left: 39px;
+			margin-right: 39px;
+			line-height: 60px;
+		}
+		.menubar a{
+			text-decoration : none;
+			font-size: 20px;
+			margin-left: 39px;
+			margin-right: 39px;
+			line-height: 60px;
+		}
+		.menubar a:hover{
+			color: #FF2882;
+		}
+		.m6{
+			color: #FF2882;
+		}
+		.menu{
+			width: 1344px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.img1{
+			width: 1344px;
+			height: 900px;
+			background-image: url(https://i.postimg.cc/nhHWgYq3/image.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.div1{
+			width: 1344px;
+			height: 320px;
+			float: left;
+			margin-top: 0px;
+		}
+		.div2{
+			width: 1344px;
+			height: 104px;
+			margin-top: 36px;
+			float: left;
+			border-top : 1px solid gray;
+		}
+		.div2 h1{
+			text-align: center;
+			line-height: 104px;
+		}
+		.div3{
+			width: 432px;
+			height: 430px;
+			margin-top: 24px;
+			margin-right: 24px;
+			float: left;
+		}
+		.div4{
+			width: 432px;
+			height: 430px;
+			margin-top: 24px;
+			float: left;
+		}
+		.footer{
+			width: 100%;
+			height: 280px;
+			background-image: url(https://i.postimg.cc/rwt2Mmjz/FOOTER-1100-1.png);
+			background-size: cover;
+			background-position: center center;
+			margin-bottom: 0px;
+			margin-top: 112px;
+		}
+		.ftd{
+			width: 530px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 50px;
+		}
+		.fti{
+			display: inline-block;
+		}
+		.ft{
+			width: 220px;
+			float: right;
+		}
+		.ft p{
+			text-align: justify;
+			color: white;
+			font-size: 20px;
+		}
+		.under a:not(:last-child)::after{
+        	content: ' | '
+     	}
+		.under-a{
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			margin-top: 10px;
+		}
+		.under-a a{
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			font-size: 14px;
+		}
+		.under-p{
+			text-align: center;
+			color: gray;
+			font-size: 11px;
+		}
+	</style>
+<body>
+		<div class="logobg">
+			<div class="prlogo">
+			<a href="index.html">
+				<img class="prlogoimg" src="https://i.postimg.cc/CLHNNx4p/pngwing-com-2.png">
+			</a>
+			</div>
+			<div class="teamlogo">
+				<a href="http://www.tottenhamhotspur.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wBz6LFFk/pngegg-7.png">
+				</a>
+				<a href="http://www.leedsunited.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wTbH4g23/kisspng-leeds-united-f-c-derby-county-f-c-english-footba-5b120ac3acd1d9-6850100715279090597079.png">
+				</a>
+				<a href="https://www.wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/x1wQY5W2/kisspng-molineux-stadium-craven-cottage-wolverhampton-wand-ham-5abce6fddce637-8512825815223293419048.png">
+				</a>
+				<a href="https://www.sufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/XqYSxzyw/kisspng-sheffield-united-f-c-bramall-lane-english-footbal-5b0d77700120c4-1956221215276092000046.png">
+				</a>
+				<a href="https://www.southamptonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/28JRFTjZ/pngegg-1.png">
+				</a>
+				<a href="https://www.wba.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/YS657H66/pngegg-3.png">
+				</a>
+				<a href="http://www.whufc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/63zF7f1T/pngegg-4.png">
+				</a>
+				<a href="https://www.chelseafc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/T1wFn5Z0/pngegg-5.png">
+				</a>
+				<a href="https://www.evertonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/4ySMPNGg/pngegg-6.png">
+				</a>
+				<a href="http://www.burnleyfootballclub.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/4d3B0kBN/pngegg.png">
+				</a>
+				<a href="https://www.arsenal.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/kG6wnQ00/pngwing-com-4.png">
+				</a>
+				<a href="https://www.avfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/fRN4ryXz/pngwing-com-5.png">
+				</a>
+				<a href="https://www.brightonandhovealbion.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/63TFvvs0/pngwing-com-6.png">
+				</a>
+				<a href="http://www.cpfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/MT4Nbpq8/pngwing-com-8.png">
+				</a>
+				<a href="https://www.fulhamfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wxySxLQx/pngwing-com-9.png">
+				</a>
+				<a href="https://www.lcfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/mZvKPkmY/pngwing-com-10.png">
+				</a>
+				<a href="http://www.liverpoolfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/GmrNjNw9/pngwing-com-11.png">
+				</a>
+				<a href="https://www.mancity.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/k5gp0b5m/pngwing-com-12.png">
+				</a>
+				<a href="https://www.manutd.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/ydJrdC9p/pngwing-com-13.png">
+				</a>
+				<a href="https://www.nufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/zB92H2Fz/pngwing-com-14.png">
+				</a>
+			</div>
+		</div>
+			<div class="clearfix"></div>
+		<div class="mainbg">
+			<div class="textbg">
+				<h1>오피셜 이적정보</h1>
+				<p>2020-2021 프리미어리그 공식 이적목록을 확인하세요.</p>
+			</div>
+		</div>
+			<div class="clearfix"></div>
+		<div class="menubar">
+			<a class="m1" href="index.html">HOME</a>
+			<a class="m2" href="league ranking table.html">LEAGUE RANKING TABLE</a>
+			<a class="m3" href="overseas article.html">OVERSEAS ARTICLE</a>
+			<a class="m4" href="highlight.html">HIGHLIGHT</a>
+			<a class="m5" href="matchday gallery.html">MATCHDAY GALLERY</a>
+			<a class="m6" href="official.html">OFFICIAL</a>
+		</div>
+		<div class="menu">
+			<div class="img1"></div>
+			<div class="div1">
+				<a href="#"><h1>토트넘, 사우샘프턴 호이비에르 영입...계약 기간 5년</h1></a>
+				<p> 토트넘이 피에르-에밀 호이비에르(25)를 영입하며 중원 강화에 성공했다.토트넘은 12일(한국시간) “사우샘프턴에서 뛰던 덴마크 국가대표 미드필더 호이비에르와 계약했다”고 밝혔다. 영국 스카이스포츠는 2025년까지 계약을 맺은 그의 이적료가 1500만 파운드(약 232억원)가량이며 계약 조건엔 보너스가 추가됐다고 보도했다.2019~2020시즌을 마친 토트넘이 2020~2021시즌을 준비하며 발표한 첫 선수 영입이다. 호이비에르는 독일 바이에른 뮌헨에서 2013년 프로로 데뷔, 2015∼2016년에는 아우크스부르크와 샬케에서 임대 생활을 했다. 이후 사우샘프턴으로 이적했다. 호이비에르는 사우샘프턴 유니폼을 입고 109경기에 출장, 4득점을 올렸다.<br><br>
+호이비에르는 중앙 미드필더이며, 공수의 균형을 잡는 데 능하다. 특히 수비 능력이 뛰어난 선수로 평가받는다. 호이비에르가 토트넘의 수비 안정화에 보탬이 된다면 손흥민의 부담은 줄어들 전망이다. 호이비에르는 “토트넘은 환상적인 팀이고, 나는 토트넘의 미래가 되고 싶었다”면서 “최고의 리더인 모리뉴 감독과 최상의 훈련시설을 보유한 토트넘은 월드클래스가 되고 싶은 선수에게 가장 적합한 팀”이라고 말했다.</p>
+			</div>
+			<div class="div2">
+				<h1>가장 최근 이적</h1>
+			</div>
+			<div class="div3">
+				<img src="https://i.postimg.cc/ZqKL3TKZ/1-1200.png">
+				<h1>첼시, 카이 하베르츠와 5년 계약…이적료 1120억원</h1>
+				<p>프리미어리그의 첼시가 마침내 '독일축구의 신성' 카이 하베르츠(21)를 품었다. 첼시는 5일(한국시간) 독일 분데스리가 레버쿠젠에서 뛴 독일 국가대표 미드필더 하베르츠와 계약했다고 발표했다. 계약 기간은 5년이다. 구단은 공개하지 않았지만 영국 공영방송 BBC 등 현지 언론은 카이의 이적료가 최대 7천100만파운드*(약 1120억원)라고 밝혔다.</p>
+			</div>
+			<div class="div3">
+				<img src="https://i.postimg.cc/MZjm13xc/2-1200.png">
+				<h1>맨유, 베테랑 에딘손 카바니 영입…1년+1년 연장옵션 </h1>
+				<p>파리 생제르맹(PSG)과 결별하고 새 둥지를 찾던 공격수 에딘손 카바니(33)가 잉글랜드 프로축구 프리미어리그(EPL) 맨체스터 유나이티드(맨유)에 입단했다. 맨유는 5일(현지시간) 구단 홈페이지를 통해 카바니 영입을 발표했다. 계약 기간은 1년이며 1년 연장 옵션이 포함돼 있다. 카바니는 나폴리를 거쳐 2013-2014시즌 PSG로 이적했다.</p>
+			</div>
+			<div class="div4">
+				<img src="https://i.postimg.cc/zBySt0gc/3-1200.png">
+				<h1>‘KBS 라인 완성’ 가레스 베일, 7년 만에 토트넘 복귀</h1>
+				<p>개러스 베일(31)이 친정팀 토트넘 홋스퍼에 복귀했다. 토트넘은 20일(한국시각) 베일을 스페인 레알 마드리드에서 임대 영입했다고 밝혔다. 계약 기간은 1년. 등 번호 9. 2013년 9월 당시 유럽 최고 이적료인 9100만파운드*(약 1381억원)를 기록하며 레알 마드리드로 이적한 베일은 7년 만에 토트넘에 돌아오며 KBS 라인을 구축하게 됐다.</p>
+			</div>
+			<div class="div3">
+				<img src="https://i.postimg.cc/m2Y35cPB/4-1100.png">
+				<h1>에버턴, 하메스 영입...2+1년 계약+이적료 340억</h1>
+				<p>하메스 로드리게스(29, 콜롬비아)가 레알 마드리드를 떠나 에버턴으로 입단했다. 에버턴은 8일(한국시간) 공식 홈페이지를 통해 하메스 영입을 발표했다. 구단은 "레알로부터 하메스를 데려왔다. 2년 계약에 1년 연장 옵션이다"고 전했다, 하메스는 지난 2014년 브라질 월드컵에서 득점왕을 차지하며 혜성처럼 떠올랐다. </p>
+			</div>
+			<div class="div3">
+				<img src="https://i.postimg.cc/yx9hBxnh/5-1200.png">
+				<h1>토트넘, 레길론 영입 발표...등번호 3번+2025년까지</h1>
+				<p>토트넘은 20일(한국시간) 공식 홈페이지를 통해 레길론 영입 소식을 알렸다. 토트넘은 "레길론과 2025년까지 계약을 맺었다. 등번호는 3번이다"고 알렸다. 레길론은 레알 마드리드에서 활약한 왼쪽 수비수이다. 지난 시즌 세비야로 임대되어 세비야가 유로파리그 우승을 차지하는데 공헌했다. 세비야 소속으로 컵대회 포함 38경기에 출전해 3골 5도움을 기록했다.</p>
+			</div>
+			<div class="div4">
+				<img src="https://i.postimg.cc/13y0h9F6/6-1100.png">
+				<h1>첼시, 왼쪽 수비 칠웰 영입...5년계약+이적료780억</h1>
+				<p>첼시는 27일(한국시간) 구단 공식 홈페이지를 통해 "레스터 시티로부터 벤 칠웰 영입을 완료했다. 계약 기간은 5년이다."라고 발표했다. 첼시는 칠웰의 이적료를 구체적으로 발표하지 않았지만, 현지 언론에 따르면 5,000만 파운드*(약 780억원) 으로 추정되고 있다. 칠웰은 레스터시티에서 4시즌동안 120경기 4골 12도움을 기록하며 핵심 멤버로 활약했다.</p>
+			</div>
+			<div class="div3">
+				<img src="https://i.postimg.cc/CKPssWz8/7-1100.png">
+				<h1>윌리안, 아스널 이적 확정...등번호 12번+3년 계약</h1>
+				<p>윌리안이 아스널 이적을 확정 지었다. 계약기간은 3년이다. 아스널은 14일(한국시간) 공식 소셜 미디어를 통해 윌리안 영입 소식을 발표했다. 등번호는 12번이다. 최근 윌리안은 첼시와의 계약이 만료된 후 첼시와 이별했다. 윌리안은 오랜 기간 첼시와 재계약 협상을 진행해왔으나 구단과 타협점을 찾지 못했다. 이후 FA신분으로 아스날에 합류했다.</p>
+			</div>
+			<div class="div3">
+				<img src="https://i.postimg.cc/mDK30C32/8-1200.png">
+				<h1>리버풀, 680억에 디오구 조타 영입… 등번호 20번</h1>
+				<p>리버풀이 포르투갈 국가대표팀 공격수 디오고 조타(23)를 영입했다. 리버풀은 20일(한국시간) 울버햄튼 원더러스로부터 조타를 영입했다고 발표했다. 계약기간은 2025년까지이며 등번호는 20번이다. 영국 BBC에 따르면 이적료는 옵션 포함 4500만파운드(약 680억원)다. 조타는 “팀에게 득점과 어시스트를 안기기 위해 최선을 다하겠다”고 소감을 밝혔다.</p>
+			</div>
+			<div class="div4">
+				<img src="https://i.postimg.cc/m2fNj32m/9-1100.png">
+				<h1>첼시 바클리, A.빌라 임대 이적...'올 시즌 종료까지'</h1>
+				<p>첼시의 로스 바클리(26)가 아스톤 빌라로 임대 이적했다.아스톤 빌라는 30일(한국시간) 구단 홈페이지를 통해 "첼시로부터 바클리를 영입하게 되어 기쁘다. 1년 임대 계약이다"고 공식 발표했다. 첼시 역시 구단 홈페이지에서 바클리의 아스톤 빌라 임대 이적 소식을 전했다. 바클리는첼시가 올여름 이적 시장에서 티모 베르너, 카이 하베르츠 등을 영입하며 입지가 줄었다.</p>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	<div class="footer">
+		<div class="ftd">
+			<div class="fti">
+				<img src="https://i.postimg.cc/SKFFsh1d/FOOTER-1100-2.png" width="300px">
+			</div>
+			<div class="ft">
+				<p>DESIGNED BY. SYJ,MSJ COPYRIGHT - SYJ,MSJ DESIGN-PROGRAMING KOREAPOLYTECUNIVER</p>
+			</div>
+			<div class="under">
+    		<div class="under-a">
+	       		<a href="#">제휴제안</a>
+	        	<a href="#">기업윤리 상담센터</a>
+	        	<a href="#">개인정보 처리방침</a>
+	     	</div>
+	        <div class="under-p">
+       			<p>Copyright PREMIERE LEAGUE Crop. All Rights Reserved.</p>
+       		</div>
+   		</div>
+	</div>
+</body>
+</html>

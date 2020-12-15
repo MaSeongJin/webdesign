@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+	<meta charset="UTF-8">
+	<title>highlight</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+	<style>
+		*{
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 0px;
+		}
+		 .ft p{
+  	  font-family: 'Poppins', sans-serif;
+  	  font-weight: 400;	
+	  }		
+
+	  .textbg h1{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 700;
+	  }
+	  .textbg p{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 100;
+	  }
+	  .menu h1{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 700;	
+	  }	 
+	  .div1 h1{
+	  color: black;
+	  font-size: 28px;
+	  }
+
+  	  /*---------------폰트-------------*/
+
+		.logobg{
+			width: 100%;
+			height: 110px;
+			background-color: white;
+			float: left;
+		}
+		.teamlogo{
+			width: 1344px;
+			height: 95px;
+			background-color: white;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			margin-bottom: 65px;
+		}
+		.tlimg{
+			height: 45px;
+			float: left;
+			margin-left: 10.8px;
+			margin-right: 10.8px;
+			margin-top: 25px;
+		}
+		.tlimg:hover{
+			height: 50px;
+			float: left;
+			margin-left: 10.8px;
+			margin-right: 10.8px;
+			margin-top: 25px;
+			border-bottom: 5px solid #F62A8D;
+		}
+		.prlogo{
+			float: left;
+			margin-top: 10px;
+			margin-left: 60px;
+		}
+		.prlogoimg{
+			height: 100px;
+			float: left;
+		}
+		.mainbg{
+			width: 100%;
+			height: 635px;
+			background-image: url(https://i.postimg.cc/7ZgZMG21/1.png);
+			background-size: cover;
+			background-position: top center;
+			float: left;
+		}
+		.textbg{
+			width: 100%;
+			height: 200px;
+			background-color: rgba(0, 0, 0, 0.62);
+			float: left;
+			margin-top: 436px;
+		}
+		.textbg h1{
+			color: white;
+			font-size: 40px;
+			margin-left: 280px;
+			margin-top: 60px;
+		}
+		.textbg p{
+			color: white;
+			font-size: 20px;
+			margin-left: 280px;
+			margin-top: 15px;
+		}
+		.clearfix{
+			clear: both;
+		}
+		.menubar{
+			width: 1344px;
+			height: 60px;
+			background-color: #37003C;
+			margin: auto;
+			margin-top: 48px;
+			margin-bottom: 48px;
+		}
+		.menubar a:not(.m4){
+			text-decoration : none;
+			color: white;
+			font-size: 20px;
+			margin-left: 39px;
+			margin-right: 39px;
+			line-height: 60px;
+		}
+		.menubar a{
+			text-decoration : none;
+			font-size: 20px;
+			margin-left: 39px;
+			margin-right: 39px;
+			line-height: 60px;
+		}
+		.menubar a:hover{
+			color: #FF2882;
+		}
+		.m4{
+			color: #FF2882;
+		}
+		.menu{
+			width: 1344px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.img1{
+			width: 1344px;
+			height: 646px;
+			background-image: url(https://i.postimg.cc/JhLcBygk/image.jpg);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.img1 img{
+			width: 180px;
+			height: 170px;
+			margin-left: 582px;
+			margin-top: 238px;
+		}
+		.img1:hover{
+			width: 1344px;
+			height: 646px;
+			background-image: url(https://i.postimg.cc/y88RDqvK/1-100.jpg);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.div1{
+			width: 1344px;
+			height: 104px;
+			margin-top: 24px;
+			float: left;
+			border-top : 1px solid gray;
+		}
+		.div1 h1{
+			text-align: center;
+			line-height: 104px;
+		}
+		.div2{
+			width: 318px;
+			height: 384px;
+			background-color: #A5A7D5;
+			margin-top: 0px;
+			float: left;
+			margin-right: 24px;
+		}
+		.subhl1{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/3xJtxfyv/1.png);
+			float: left;
+		}
+		.subhl1:hover {
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/zDtCrGJN/1.png);
+			float: left;
+		}
+		.upimg{
+			width: 70px;
+			height: 65px;
+			margin-left: 124px;
+			margin-top: 84px;
+			margin-bottom: 87.5px;
+		}
+		.subhl2{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/FKYGjfVF/2.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.subhl2:hover {
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/brBkH36r/2.png);
+			float: left;
+		}
+		.subhl3{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/cJPhTsFR/3.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.subhl3:hover {
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/bNZQNfJt/3.png);
+			float: left;
+		}
+		.subhl4{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/QM3XdQvz/1-100.jpg);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.subhl4:hover {
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/6pVkzD1H/1-100.jpg);
+			float: left;
+		}
+		.div3{
+			width: 318px;
+			height: 384px;
+			background-color: #A5A7D5;
+			margin-top: 0px;
+			float: left;
+		}
+		.div12	{
+			width: 1344px;
+			height: 104px;
+			float: left;
+			margin-top: 24px;
+			margin-bottom: -0px;
+		}
+
+		.img2{
+			width: 100%;
+			height: 1150px;
+			background-image: url(https://i.postimg.cc/wBXb9Ld0/12.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: -470px;
+		}
+		.div4{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/prGNQ8GP/1-1-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-right: 24px;
+		}
+		.div4:hover{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/pLnN8mDt/1-2-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-right: 24px;
+		}
+		.div5{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/0QPhLZh8/2-1-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-right: 24px;
+		}
+		.div5:hover{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/s2pt6b66/2-2-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-right: 24px;
+		}
+		.div6{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/5Nrd6BQ3/3-1-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-right: 24px;
+		}
+		.div6:hover{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/Y2bwwKpT/3-2-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-right: 24px;
+		}
+		.div7{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/zfmskqjH/4-1-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+		}
+		.div7:hover{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/RVhxSshh/4-2-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+		}
+		.div8{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/1tBbPwZD/5-1-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-right: 24px;
+			margin-bottom: 144px;
+		}
+		.div8:hover{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/c4rPyvk8/5-2-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-right: 24px;
+		}
+		.div9{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/Kz0pCbnN/6-1-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-right: 24px;
+			margin-bottom: 144px;
+		}
+		.div9:hover{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/9ftntZ0s/6-2-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-right: 24px;
+		}
+		.div10{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/FRrnPzJz/7-1-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-right: 24px;
+			margin-bottom: 144px;
+		}
+		.div10:hover{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/W4PykXNM/7-2-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-right: 24px;
+		}
+		.div11{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/GhVVcb6g/8-1-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+			margin-bottom: 144px;
+		}
+		.div11:hover{
+			width: 318px;
+			height: 240px;
+			background-image: url(https://i.postimg.cc/wjNPMSpq/8-2-1100.png);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+		}
+		.footer{
+			width: 100%;
+			height: 280px;
+			background-image: url(https://i.postimg.cc/rwt2Mmjz/FOOTER-1100-1.png);
+			background-size: cover;
+			background-position: center center;
+			margin-bottom: 0px;
+			margin-top: 0px;
+		}
+		.ftd{
+			width: 530px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 50px;
+		}
+		.fti{
+			display: inline-block;
+		}
+		.ft{
+			width: 220px;
+			float: right;
+		}
+		.ft p{
+			text-align: justify;
+			color: white;
+			font-size: 20px;
+		}
+		.under a:not(:last-child)::after{
+        	content: ' | '
+     	}
+		.under-a{
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			margin-top: 10px;
+		}
+		.under-a a{
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			font-size: 14px;
+		}
+		.under-p{
+			text-align: center;
+			color: gray;
+			font-size: 11px;
+		}
+		.mw{
+			margin-bottom: 270px;
+			font-size: 50px;
+			color: white;
+			margin-left: -218px;
+		}
+		.underimg{
+			width: 318px;
+			height: 144px;
+		}
+	</style>
+<body>
+		<div class="logobg">
+			<div class="prlogo">
+			<a href="index.html">
+				<img class="prlogoimg" src="https://i.postimg.cc/CLHNNx4p/pngwing-com-2.png">
+			</a>
+			</div>
+			<div class="teamlogo">
+				<a href="http://www.tottenhamhotspur.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wBz6LFFk/pngegg-7.png">
+				</a>
+				<a href="http://www.leedsunited.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wTbH4g23/kisspng-leeds-united-f-c-derby-county-f-c-english-footba-5b120ac3acd1d9-6850100715279090597079.png">
+				</a>
+				<a href="https://www.wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/x1wQY5W2/kisspng-molineux-stadium-craven-cottage-wolverhampton-wand-ham-5abce6fddce637-8512825815223293419048.png">
+				</a>
+				<a href="https://www.sufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/XqYSxzyw/kisspng-sheffield-united-f-c-bramall-lane-english-footbal-5b0d77700120c4-1956221215276092000046.png">
+				</a>
+				<a href="https://www.southamptonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/28JRFTjZ/pngegg-1.png">
+				</a>
+				<a href="https://www.wba.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/YS657H66/pngegg-3.png">
+				</a>
+				<a href="http://www.whufc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/63zF7f1T/pngegg-4.png">
+				</a>
+				<a href="https://www.chelseafc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/T1wFn5Z0/pngegg-5.png">
+				</a>
+				<a href="https://www.evertonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/4ySMPNGg/pngegg-6.png">
+				</a>
+				<a href="http://www.burnleyfootballclub.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/4d3B0kBN/pngegg.png">
+				</a>
+				<a href="https://www.arsenal.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/kG6wnQ00/pngwing-com-4.png">
+				</a>
+				<a href="https://www.avfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/fRN4ryXz/pngwing-com-5.png">
+				</a>
+				<a href="https://www.brightonandhovealbion.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/63TFvvs0/pngwing-com-6.png">
+				</a>
+				<a href="http://www.cpfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/MT4Nbpq8/pngwing-com-8.png">
+				</a>
+				<a href="https://www.fulhamfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wxySxLQx/pngwing-com-9.png">
+				</a>
+				<a href="https://www.lcfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/mZvKPkmY/pngwing-com-10.png">
+				</a>
+				<a href="http://www.liverpoolfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/GmrNjNw9/pngwing-com-11.png">
+				</a>
+				<a href="https://www.mancity.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/k5gp0b5m/pngwing-com-12.png">
+				</a>
+				<a href="https://www.manutd.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/ydJrdC9p/pngwing-com-13.png">
+				</a>
+				<a href="https://www.nufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/zB92H2Fz/pngwing-com-14.png">
+				</a>
+			</div>
+		</div>
+			<div class="clearfix"></div>
+		<div class="mainbg">
+			<div class="textbg">
+				<h1>경기 하이라이트</h1>
+				<p>YOUTUBE를 통해 놓친 경기를 빠르게 시청하세요.</p>
+			</div>
+		</div>
+			<div class="clearfix"></div>
+		<div class="menubar">
+			<a class="m1" href="index.html">HOME</a>
+			<a class="m2" href="league ranking table.html">LEAGUE RANKING TABLE</a>
+			<a class="m3" href="overseas article.html">OVERSEAS ARTICLE</a>
+			<a class="m4" href="highlight.html">HIGHLIGHT</a>
+			<a class="m5" href="matchday gallery.html">MATCHDAY GALLERY</a>
+			<a class="m6" href="official.html">OFFICIAL</a>
+		</div>
+		<div class="menu">
+			<a href="">
+				<div class="img1">
+					<img src="https://i.postimg.cc/6qfjzskc/pngwing-com-1-1.png">
+				</div>
+			</a>
+			<div class="div1">
+				<h1>가장 많이 본 하이라이트</h1>
+			</div>
+			<div class="div2">
+				<div class="subhl1">
+					<img class="upimg" src="https://i.postimg.cc/6qfjzskc/pngwing-com-1-1.png">
+					<img class="unerimg" src="https://i.postimg.cc/3RqnCWtm/1-100.jpg">
+				</div>
+			</div>
+			<div class="div2">
+				<div class="subhl2">
+					<img class="upimg" src="https://i.postimg.cc/6qfjzskc/pngwing-com-1-1.png">
+					<img class="unerimg" src="https://i.postimg.cc/PfpjGDnG/2-100.jpg">
+				</div>
+			</div>
+			<div class="div2">
+				<div class="subhl3">
+					<img class="upimg" src="https://i.postimg.cc/6qfjzskc/pngwing-com-1-1.png">
+					<img class="unerimg" src="https://i.postimg.cc/MK1JH8Gd/3-100.jpg">
+				</div>
+			</div>
+			<div class="div3">
+				<div class="subhl4">
+					<img class="upimg" src="https://i.postimg.cc/6qfjzskc/pngwing-com-1-1.png">
+					<img class="unerimg" src="https://i.postimg.cc/PfgkdqdC/4-100.jpg">
+				</div>
+			</div>
+			<div class="div12"></div>
+			<h1 class="mw">2020-2021 13R 매치위크<br>HOT MOMENTS</h1>
+			<div class="div4"></div>
+			<div class="div5"></div>
+			<div class="div6"></div>
+			<div class="div7"></div>
+			<div class="div8"></div>
+			<div class="div9"></div>
+			<div class="div10"></div>
+			<div class="div11"></div>
+		</div>
+		<div class="img2">	</div>
+		<div class="clearfix"></div>
+	<div class="footer">
+		<div class="ftd">
+			<div class="fti">
+				<img src="https://i.postimg.cc/SKFFsh1d/FOOTER-1100-2.png" width="300px">
+			</div>
+			<div class="ft">
+				<p>DESIGNED BY. SYJ,MSJ COPYRIGHT - SYJ,MSJ DESIGN-PROGRAMING KOREAPOLYTECUNIVER</p>
+			</div>
+			<div class="under">
+    		<div class="under-a">
+	       		<a href="#">제휴제안</a>
+	        	<a href="#">기업윤리 상담센터</a>
+	        	<a href="#">개인정보 처리방침</a>
+	     	</div>
+	        <div class="under-p">
+       			<p>Copyright PREMIERE LEAGUE Crop. All Rights Reserved.</p>
+       		</div>
+   		</div>
+	</div>
+</body>
+</html>

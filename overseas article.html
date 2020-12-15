@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+	<meta charset="UTF-8">
+	<title>overseas article</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+	<style>
+		*{
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 0px;
+		}
+
+	  .ft p{
+  	  font-family: 'Poppins', sans-serif;
+  	  font-weight: 400;	
+	  }		
+
+	  .textbg h1{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 700;
+	  }
+	  .textbg p{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 100;
+	  }	 
+	  .div1 h1{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 700;
+	  font-size: 30px;
+	  }
+	  .div1 p{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 300;
+	  margin-top: 20px;
+	  }
+	  .div2 h1{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 700;
+	  font-size: 26px;
+	  }
+	  .div2 p{
+	  font-family: 'Noto Sans KR', sans-serif;
+	  font-weight: 300;
+	  margin-top: 15px;
+	  }
+
+
+
+  	  /*---------------폰트-------------*/
+
+		.logobg{
+			width: 100%;
+			height: 110px;
+			background-color: white;
+			float: left;
+		}
+		.teamlogo{
+			width: 1344px;
+			height: 95px;
+			background-color: white;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			margin-bottom: 65px;
+		}
+		.tlimg{
+			height: 45px;
+			float: left;
+			margin-left: 10.8px;
+			margin-right: 10.8px;
+			margin-top: 25px;
+		}
+		.tlimg:hover{
+			height: 50px;
+			float: left;
+			margin-left: 10.8px;
+			margin-right: 10.8px;
+			margin-top: 25px;
+			border-bottom: 5px solid #F62A8D;
+		}
+		.prlogo{
+			float: left;
+			margin-top: 10px;
+			margin-left: 60px;
+		}
+		.prlogoimg{
+			height: 100px;
+			float: left;
+		}
+		.mainbg{
+			width: 100%;
+			height: 635px;
+			background-image: url(https://i.postimg.cc/FsG15ZTk/2816676-58098548-2560-1440.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.textbg{
+			width: 100%;
+			height: 200px;
+			background-color: rgba(0, 0, 0, 0.62);
+			float: left;
+			margin-top: 436px;
+		}
+		.textbg h1{
+			color: white;
+			font-size: 40px;
+			margin-left: 280px;
+			margin-top: 60px;
+		}
+		.textbg p{
+			color: white;
+			font-size: 20px;
+			margin-left: 280px;
+			margin-top: 10px;
+		}
+		.clearfix{
+			clear: both;
+		}
+		.menubar{
+			width: 1344px;
+			height: 60px;
+			background-color: #37003C;
+			margin: auto;
+			margin-top: 48px;
+			margin-bottom: 48px;
+		}
+		.menubar a:not(.m3){
+			text-decoration : none;
+			color: white;
+			font-size: 20px;
+			margin-left: 39px;
+			margin-right: 39px;
+			line-height: 60px;
+		}
+		.menubar a{
+			text-decoration : none;
+			font-size: 20px;
+			margin-left: 39px;
+			margin-right: 39px;
+			line-height: 60px;
+		}
+		.menubar a:hover{
+			color: #FF2882;
+		}
+		.m3{
+			color: #FF2882;
+		}
+		.menu{
+			width: 1344px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.img1{
+			width: 660px;
+			height: 500px;
+			background-image: url(https://i.postimg.cc/fb6QS2Qf/rltk1.png);
+			background-size: cover;
+			background-position: center center;
+			float: left;
+		}
+		.div1{
+			width: 660px;
+			height: 500px;
+			float: left;
+			margin-left: 24px;
+			text-align: justify;
+		}
+		.img2{
+			width: 432px;
+			height: 328px;
+			background-image: url(https://i.postimg.cc/Kjp6FJfT/rltk2.jpg);
+			background-size: cover;
+			background-position: top center;
+			margin-top: 24px;
+			float: left;
+		}
+		.img3{
+			width: 432px;
+			height: 328px;
+			background-image: url(https://i.postimg.cc/RVzsJr60/rltk3.jpg);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+		}
+		.img4{
+			width: 432px;
+			height: 328px;
+			background-image: url(https://i.postimg.cc/cJrykqcS/rltk4.jpg);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+		}
+		.img5{
+			width: 432px;
+			height: 328px;
+			background-image: url(https://i.postimg.cc/3xknP3zn/rltk5.jpg);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+		}
+		.img6{
+			width: 432px;
+			height: 328px;
+			background-image: url(https://i.postimg.cc/xCZdpyms/rltk6.jpg);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+		}
+		.img7{
+			width: 432px;
+			height: 328px;
+			background-image: url(https://i.postimg.cc/SRDbtmHm/rltk7.jpg);
+			background-size: cover;
+			background-position: center center;
+			margin-top: 24px;
+			float: left;
+		}
+		.div2{
+			width: 888px;
+			height: 328px;
+			margin-top: 24px;
+			float: left;
+			margin-left: 24px;
+			text-align: justify;
+		}
+		.list{
+			width: 280px;
+			height: 48px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 80px;
+			margin-bottom: 80px;
+		}
+		.list1{
+			width: 48px;
+			height: 48px;
+			margin-right: 10px;
+			float: left;
+			border: 1px solid #37003C;
+		}
+		.list1:hover{
+			background-color: #37003C;
+			color: white
+		}
+		.list1 p{
+			line-height: 46px;
+			margin-left: 18px;
+			margin-right: auto;
+			font-size: 20px;
+		}
+		.list2{
+			width: 48px;
+			height: 48px;
+			float: left;
+			border: 1px solid #37003C;
+		}
+		.list2:hover{
+			background-color: #37003C;
+			color: white
+		}
+		.list2 p{
+			line-height: 46px;
+			margin-left: 18px;
+			margin-right: auto;
+			font-size: 20px;
+		}
+		.footer{
+			width: 100%;
+			height: 280px;
+			background-image: url(https://i.postimg.cc/rwt2Mmjz/FOOTER-1100-1.png);
+			background-size: cover;
+			background-position: center center;
+			margin-bottom: 0px;
+			margin-top: 112px;
+		}
+		.ftd{
+			width: 530px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 50px;
+		}
+		.fti{
+			display: inline-block;
+		}
+		.ft{
+			width: 220px;
+			float: right;
+		}
+		.ft p{
+			text-align: justify;
+			color: white;
+			font-size: 20px;
+		}
+		.under a:not(:last-child)::after{
+        	content: ' | '
+     	}
+		.under-a{
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			margin-top: 10px;
+		}
+		.under-a a{
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			font-size: 14px;
+		}
+		.under-p{
+			text-align: center;
+			color: gray;
+			font-size: 11px;
+		}
+	</style>
+<body>
+		<div class="logobg">
+			<div class="prlogo">
+			<a href="index.html">
+				<img class="prlogoimg" src="https://i.postimg.cc/CLHNNx4p/pngwing-com-2.png">
+			</a>
+			</div>
+			<div class="teamlogo">
+				<a href="http://www.tottenhamhotspur.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wBz6LFFk/pngegg-7.png">
+				</a>
+				<a href="http://www.leedsunited.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wTbH4g23/kisspng-leeds-united-f-c-derby-county-f-c-english-footba-5b120ac3acd1d9-6850100715279090597079.png">
+				</a>
+				<a href="https://www.wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/x1wQY5W2/kisspng-molineux-stadium-craven-cottage-wolverhampton-wand-ham-5abce6fddce637-8512825815223293419048.png">
+				</a>
+				<a href="https://www.sufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/XqYSxzyw/kisspng-sheffield-united-f-c-bramall-lane-english-footbal-5b0d77700120c4-1956221215276092000046.png">
+				</a>
+				<a href="https://www.southamptonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/28JRFTjZ/pngegg-1.png">
+				</a>
+				<a href="https://www.wba.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/YS657H66/pngegg-3.png">
+				</a>
+				<a href="http://www.whufc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/63zF7f1T/pngegg-4.png">
+				</a>
+				<a href="https://www.chelseafc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/T1wFn5Z0/pngegg-5.png">
+				</a>
+				<a href="https://www.evertonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/4ySMPNGg/pngegg-6.png">
+				</a>
+				<a href="http://www.burnleyfootballclub.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/4d3B0kBN/pngegg.png">
+				</a>
+				<a href="https://www.arsenal.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/kG6wnQ00/pngwing-com-4.png">
+				</a>
+				<a href="https://www.avfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/fRN4ryXz/pngwing-com-5.png">
+				</a>
+				<a href="https://www.brightonandhovealbion.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/63TFvvs0/pngwing-com-6.png">
+				</a>
+				<a href="http://www.cpfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/MT4Nbpq8/pngwing-com-8.png">
+				</a>
+				<a href="https://www.fulhamfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/wxySxLQx/pngwing-com-9.png">
+				</a>
+				<a href="https://www.lcfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/mZvKPkmY/pngwing-com-10.png">
+				</a>
+				<a href="http://www.liverpoolfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/GmrNjNw9/pngwing-com-11.png">
+				</a>
+				<a href="https://www.mancity.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/k5gp0b5m/pngwing-com-12.png">
+				</a>
+				<a href="https://www.manutd.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link#">
+					<img class="tlimg" src="https://i.postimg.cc/ydJrdC9p/pngwing-com-13.png">
+				</a>
+				<a href="https://www.nufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link">
+					<img class="tlimg" src="https://i.postimg.cc/zB92H2Fz/pngwing-com-14.png">
+				</a>
+			</div>
+		</div>
+			<div class="clearfix"></div>
+		<div class="mainbg">
+			<div class="textbg">
+				<h1>해외기사</h1>
+				<p>누구보다 빠르게 해외 기사 번역본을 확인하세요.</p>
+			</div>
+		</div>
+			<div class="clearfix"></div>
+		<div class="menubar">
+			<a class="m1" href="index.html">HOME</a>
+			<a class="m2" href="league ranking table.html">LEAGUE RANKING TABLE</a>
+			<a class="m3" href="overseas article.html">OVERSEAS ARTICLE</a>
+			<a class="m4" href="highlight.html">HIGHLIGHT</a>
+			<a class="m5" href="matchday gallery.html">MATCHDAY GALLERY</a>
+			<a class="m6" href="official.html">OFFICIAL</a>
+		</div>
+		<div class="menu">
+			<div class="img1"></div>
+			<div class="div1">
+				<h1>Man Utd 스타는 원정 경기당 평균 7.6 점을 기록하고 있으며 판타지 5 개 최고 후보 중 하나입니다.</h1>
+				<p>셰필드 유나이티드를 방문한 래쉬 포드는 그의 다작의 원정 양식을 확장 할 수있는 기회를 제공합니다. 맨체스터 유나이티드  그의 도로의 다섯 이번 시즌을 여행에 별 수익률을 생산하고있다. 그는 원정 경기당 평균 7.6 점을 기록하며 3 골을 기록하고 여행에서 4 개의 어시스트를 제공했습니다. 홈에서 멀리 떨어져있는 그의 14 번의 슛과 6 번의 큰 기회는 모두 Man Utd의 선두적인 합계입니다. Sheff Utd의 수비 기록은 또한 잉글랜드 국가 대표가 도로에서 또 다른 운송 수단을 제공 할 수 있음을 시사합니다.Blades는 이번 시즌에 아직 깨끗한 시트를 유지하는 유일한 측면입니다. Aston Villa 의 센터백은 Burnley 에게 큰 잠재력을 제공합니다. Mings는 10 번의 Gameweek 출전을 통해 두 골과 5 개의 클린 시트를 결합했습니다.그는 이번 시즌 6 번의 원정 경기에서 단 4 골만 득점 한 번리 팀과 맞붙습니다.맨체스터 시티는 왼쪽 수비수 외모가 홈에서 시작하도록 설정  웨스트 브롬 위치 알비온 존재가 주말 맨체스터 더비에서 휴식 후. Mendy는 Etihad Stadium에서 이전 두 경기를 모두 시작하여 20 점을 얻었습니다. 프랑스 인은 최근 번리와 풀햄을 상대로 한 승리에서 한 번의 득점을 올렸고 연속 클린 시트를 제작했습니다. 웨스트 햄 유나이티드 의 윙어 는 지난 금요일 리즈 유나이티드 와의 첫 경기에서 깊은 인상을 받았습니다. Benrahma의 6 발은 Gameweek 12의 모든 선수들 사이에서 공동 1 위를 차지했으며 West Ham의 Crystal Palace 와의 홈 미팅을 앞두고 골에 대한 눈을 강조했습니다. 알제리는 이전 4 경기에서 풀럼과 아스톤 빌라를 상대로 어시스트를 제공하기도했다.  </p>
+			</div>
+			<div class="img2"></div>
+			<div class="div2">
+				<h1>손·케인' EPL 역사상 최고 파트너까지…'카운트다운' 돌입</h1>
+				<p>토트넘 손흥민(28)과 해리 케인(27)이 잉글랜드 프리미어리그(EPL) 역사상 최고 공격 파트너로 공인받는 데 카운트다운에 돌입했다.손흥민과 케인은 14일(이하 한국시간) 잉글랜드 런던 셀허스트 파크에서 끝난 2020~2021시즌 EPL 12라운드 크리스털 팰리스와 원정 경기에서 전반 23분 선제골을 합작했다. 왼쪽 윙어로 선발 출격한 손흥민이 미드필드 왼쪽에서 공을 이어받아 뒤따르던 케인에게 내줬다. 케인이 골대를 바라보고 오른발 무회전 슛을 시도해 골문을 갈랐다. 손흥민은 올 시즌 EPL 4호이자 시즌 7호 도움을, 케인은 EPL 9호 골(시즌 15호 골)을 각각 해냈다. 둘은 올 시즌 EPL 12경기서 12골을 합작했다. 토트넘 전체 득점(24골)의 절반을 차지한다. 손흥민이 케인의 도움을 받아 8골(전체 10골)을 넣었고, 케인이 손흥민의 도움을 받아 4골을 기록했다. 토트넘이 자랑하는 ‘손·케인’ 듀오가 경기당 평균 1골씩 만들어낸 셈이다. EPL에서 한 시즌 공격 듀오 최다 합작골은 지난 1994~1995시즌 블랙번 로버스 소속으로 뛴 앨런 시어러와 크리스 서턴의 13골이다. 손흥민과 케인은 한 시즌 전체 38라운드의 절반도 소화하지 않은 가운데 12골로 대기록에 1골 차이로 다가섰다. 오는 17일 리버풀과 13라운드 원정 경기에서 타이기록 또는 신기록 작성에 나선다. 또 통산 최다 합작골 기록도 넘보고 있다. 현재 1위는 첼시 소속으로 뛴 디디에 드로그바와 프랭크 램파드의 36골이다. 손흥민과 케인은 크리스털 팰리스전까지 통산 32골로 역대 2위에 매겨져 있다. 4골 차이인 만큼 통산 최다 합작골 부문도 올 시즌 경신할 가능성이 크다.</p>
+			</div>
+			<div class="img3"></div>
+			<div class="div2">
+				<h1>'손흥민 도움-케인 골' 토트넘, C.팰리스와 1-1… EPL 11경기 무패</h1>
+				<p>잉글랜드 프로축구 프리미어리그(EPL)의 선두 경쟁이 '혼전'으로 치닫고 있다. 1, 2위팀 토트넘 홋스퍼와 리버풀은 12라운드에서 '한수 아래' 팀들과 맞붙어 승점 3점을 챙기는데 실패, 치고나가지 못한 사이 레스터 시티와 사우샘프턴이 승리를 거두면서 이들의 뒤를 바짝 쫓고 있다. 선두 도약을 노렸던 첼시는 에버턴전에서 패하며 5위로 내려앉은 형국. 1위와 5위팀간 승점은 3점에 불과, 13라운드 성적이 선두권 지도를 바꿀 변수로 부상했다. 선두 토트넘은 첼시가 에버턴에 0대1로 져 한결 가벼운 발걸음으로 13일 밤 크리스탈 팰리스전에 나섰으나 1대1 무승부를 기록, 만족스럽지 못한 성적표를 받았다. 손흥민의 패스를 받은 해리 케인이 득점하며 토트넘이 앞서갔으나 후반 36분 슐롭에게 실점하면서 경기는 무승부로 끝났다. 손흥민은 리그 4호이자 시즌 7호 도움을 기록했다. 당초 토트넘은 팰리스전에서 승리하지 못할 경우 선두 자리를 내줄 것으로 예상됐지만 리버풀이 풀럼전에서 비겨 토트넘은 7승 4무 1패 승점 25점으로 리버풀과 승점에서 동률을 이뤘으나 골득실에서 앞서 선두를 유지했다. '빅2'가 주춤한 사이 사우스햄튼과 레스터 시티는 나란히 승리, 토트넘과의 승점 차를 각각 1점, 2점으로 좁히는데 성공했다. 이런 가운데 웨스트햄, 에버턴, 맨체스터 유나이티드도 승점 20으로 중상위권을 형성, 언제든 선두권으로 치고 나올 태세를 갖추고 있다. 여기에 9위 맨체스터 시티(승점 19)까지 선두 토트넘을 2경기 차 이내서 추격 중이다.</p>
+			</div>
+			<div class="img4"></div>
+			<div class="div2">
+				<h1>토트넘-리버풀 무승부…1위-5위 '승점 3점차' 혼전의 EPL</h1>
+				<p>토트넘 손흥민(28)과 해리 케인(27)이 잉글랜드 프리미어리그(EPL) 역사상 최고 공격 파트너로 공인받는 데 카운트다운에 돌입했다.손흥민과 케인은 14일(이하 한국시간) 잉글랜드 런던 셀허스트 파크에서 끝난 2020~2021시즌 EPL 12라운드 크리스털 팰리스와 원정 경기에서 전반 23분 선제골을 합작했다. 왼쪽 윙어로 선발 출격한 손흥민이 미드필드 왼쪽에서 공을 이어받아 뒤따르던 케인에게 내줬다. 케인이 골대를 바라보고 오른발 무회전 슛을 시도해 골문을 갈랐다. 손흥민은 올 시즌 EPL 4호이자 시즌 7호 도움을, 케인은 EPL 9호 골(시즌 15호 골)을 각각 해냈다. 둘은 올 시즌 EPL 12경기서 12골을 합작했다. 토트넘 전체 득점(24골)의 절반을 차지한다. 손흥민이 케인의 도움을 받아 8골(전체 10골)을 넣었고, 케인이 손흥민의 도움을 받아 4골을 기록했다. 토트넘이 자랑하는 ‘손·케인’ 듀오가 경기당 평균 1골씩 만들어낸 셈이다. EPL에서 한 시즌 공격 듀오 최다 합작골은 지난 1994~1995시즌 블랙번 로버스 소속으로 뛴 앨런 시어러와 크리스 서턴의 13골이다. 손흥민과 케인은 한 시즌 전체 38라운드의 절반도 소화하지 않은 가운데 12골로 대기록에 1골 차이로 다가섰다. 오는 17일 리버풀과 13라운드 원정 경기에서 타이기록 또는 신기록 작성에 나선다. 또 통산 최다 합작골 기록도 넘보고 있다. 현재 1위는 첼시 소속으로 뛴 디디에 드로그바와 프랭크 램파드의 36골이다. 손흥민과 케인은 크리스털 팰리스전까지 통산 32골로 역대 2위에 매겨져 있다. 4골 차이인 만큼 통산 최다 합작골 부문도 올 시즌 경신할 가능성이 크다.</p>
+			</div>
+			<div class="img5"></div>
+			<div class="div2">
+				<h1>토트넘 무패·선두 이끈 모리뉴, EPL '11월의 감독'</h1>
+				<p>손흥민의 소속팀 토트넘 홋스퍼를 이끄는 조제 모리뉴 감독이 프리미어리그(EPL) 11월 최고의 감독으로 뽑혔습니다. EPL 사무국은 11월 '이달의 감독' 수상자로 모리뉴 감독을 선정했다고 밝혔습니다. 모리뉴 감독이 EPL 이달의 감독으로 뽑힌 건 첼시 시절인 2004년 11월, 2005년 1월, 2007년 3월에 이어 통산 네 번째입니다. 토트넘은 11월 리그 4경기에서 3승 1무를 거둬 리그 선두로 도약했고, 이 기간 무실점 경기가 세 번일 정도로 안정된 경기력을 뽐냈습니다. 이런 상승세를 지휘한 공을 인정받아 모리뉴 감독은 프랭크 램퍼드(첼시) 등 다른 후보를 제쳐 13년여 만에 EPL '이달의 감독' 영예를 안았습니다. 모리뉴 감독은 EPL 홈페이지를 통해 "이달의 감독상은 저에겐 이달의 팀이자, 이달의 스태프를 의미한다. 선수, 코치, 스포츠 과학 담당자, 분석가 등 많은 이들을 위한 것"이라고 소감을 밝혔습니다.</p>
+			</div>
+			<div class="img6"></div>
+			<div class="div2">
+				<h1>EPL 명가 아스널 왜 이러나...아직 위기의식도 없다.</h1>
+				<p>잉글랜드 프리미어리그(EPL)의 명문클럽 아스널의 추락에 날개가 없다. EPL의 ‘빅5’로 우승후보로 꼽히던 아스널은 우승권은 커녕 강등권이 눈앞에 다가왔다. 아스널은 14일 오전(한국시간) 열린 2020~21시즌 12라운드에서 약체 번리에 0-1로 패했다. 그것도 자신의 홈구장인 런던의 에미레이츠 스타디움에서 패해 충격이 더 크다. 최근 5경기에서 1승도 건지지 못한채 1무4패를 기록중이다. 아스널은 4승 1무 7패(승점 13)으로 리그 15위로 추락했고, 승률은 25%도 되지 않을 정도로 극도의 부진에 빠져 있다. 아스널은 볼 점유율 65%로 압도하고 무려 18개의 슈팅을 기록했지만 단 1골도 성공시키지 못했다. 오히려 후반 13분 미드필더 사카가 흥분을 가라앉히지 못하고 번리 웨스트우드의 목을 손으로 밀쳐 주심은 VAR 판독 후 쟈카에게 경고가 아닌 퇴장을 선언했다. 분위기를 잃은 아스널은 특급 공격수 피에르 에머릭 오바메양이 후반 28분 헤딩 자책골로 득점을 올렸다. 아스널은 수적열세 속에서 강등권 번리에 패했다. 지난해 12월 부임한 미켈 아르테타는 아스널이 첫 감독 부임지였다. 당시에 아스널이 너무 과한 빅 클럽이었다는 평가도 있었다. 이전에는 맨체스터 유나이티드에서 수석코치로 재직했다. 선수단은 팀내 최고 몸값(주급 5억2000만원)인 메수트 외질을 스쿼드에서 아예 제외하면서부터 삐그덕거렸다. 그런 분위기는 좀처럼 나아지지 않고 있다. 최근 5경기에서 1득점에 8실점하고 있다는 점은 팀내 분위기를 증명하고 있다.</p>
+			</div>
+			<div class="img7"></div>
+			<div class="div2">
+				<h1>리버풀, 풀럼 원정서 무승부. 리그 선두 등극 기회 놓쳐</h1>
+				<p>리버풀이 선두 등극 기회를 놓쳤다. 리버풀은 13일 오후(현지시각) 영국 런던 크레이븐코티지에서 열린 풀럼과의 2020~2021시즌 잉글랜드 프리미어리그(EPL) 12라운드 경기에서 1대1로 비겼다. 이번 라운드 전까지 리버풀은 선두 토트넘과 승점이 같았다. 골득실차에서 밀리며 2위를 달리고 있었다. 그런데 풀럼전 직전 열린 경기에서 토트넘이 크리스탈팰리스와 비겼다. 리버풀은 선두 등극의 기회를 맞이했다. 풀럼전에 승리를 하면 토트넘을 제치고 리그 선두로 올라설 수 있었다. 그러나 비기면서 승점 1점 추가에 그쳤다. 여전히 토트넘과 승점은 같고 골득실차에서 밀린 2위에 머물렀다. 경기 초반 리버풀은 풀럼의 공세에 고전했다. 풀럼이 연거푸 슈팅을 시도했다. 알리송이 선방했다. 전반 26분 리버풀은 풀럼에게 선제골을 허용했다. 코너킥 상황에서 리드가 강력한 오른발 슈팅으로 골망을 흔들었다. 리버풀은 공세로 전환했다. 그러자 풀럼은 선수비 후역습으로 나섰다. 리버풀의 뒷공간을 노렸다. 풀럼은 몇 차례 리버풀의 문전을 두드렸다. 리버풀은 알리송의 선방으로 위기를 넘겼다. 리버풀은 후반 32분 동점골을 만들었다. 세트피스 상황에서 바이날둠의 슈팅이 풀럼 카마라의 팔에 맞았다. 주심은 페널티킥을 선언했다. 키커로 나선 살라가 골로 연결했다. 양 팀은 남은 시간 공격을 주고받았다. 그러나 더 이상 골을 만들어내지 못했다. 결국 승점 1점씩을 나눠가졌다.</p>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="list">
+			<div class="list1">
+				<p>1</p>
+			</div>
+			<div class="list1">
+				<p>2</p>
+			</div>
+			<div class="list1">
+				<p>3</p>
+			</div>
+			<div class="list1">
+				<p>4</p>
+			</div>
+			<div class="list2">
+				<p>5</p>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	<div class="footer">
+		<div class="ftd">
+			<div class="fti">
+				<img src="https://i.postimg.cc/SKFFsh1d/FOOTER-1100-2.png" width="300px">
+			</div>
+			<div class="ft">
+				<p>DESIGNED BY. SYJ,MSJ COPYRIGHT - SYJ,MSJ DESIGN-PROGRAMING KOREAPOLYTECUNIVER</p>
+			</div>
+			<div class="under">
+    		<div class="under-a">
+	       		<a href="#">제휴제안</a>
+	        	<a href="#">기업윤리 상담센터</a>
+	        	<a href="#">개인정보 처리방침</a>
+	     	</div>
+	        <div class="under-p">
+       			<p>Copyright PREMIERE LEAGUE Crop. All Rights Reserved.</p>
+       		</div>
+   		</div>
+	</div>
+</body>
+</html>
